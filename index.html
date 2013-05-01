@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Open Aviation Map WebGL viewer</title>
+    <script type="text/javascript" src="Cesium/Cesium.js"></script>
+    <script type="text/javascript" src="BoxTessellator.js"></script>
+    <script type="text/javascript" src="Box.js"></script>
+    <style>
+      @import url(Cesium/Widgets/CesiumWidget/CesiumWidget.css);
+      body {
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+<body>
+  <div id="cesiumContainer" class="fullSize"></div>
+  <div id="buttons"></div>
+  <script>
+    var bg = new Cesium.SingleTileImageryProvider({
+        url: 'white.png'
+    });
+    var osmProvider = new Cesium.OpenStreetMapImageryProvider({
+        url: 'http://openaviationmap.tyrell.hu/static/osm',
+        maximumLevel: 15,
+        credit: 'Open Aviation Map'
+    });
+    var oamProvider = new Cesium.OpenStreetMapImageryProvider({
+        url: 'http://openaviationmap.tyrell.hu/static/oam',
+        maximumLevel: 15,
+        credit: 'Open Aviation Map'
+    });
+
+    var widget = new Cesium.CesiumWidget('cesiumContainer');
+    var scene = widget.scene;
+    var ellipsoid = widget.centralBody.getEllipsoid();
+    var primitives = scene.getPrimitives();
+
+    var layers = widget.centralBody.getImageryLayers();
+    layers.removeAll();
+    layers.addImageryProvider(bg);
+    layers.addImageryProvider(osmProvider);
+    layers.addImageryProvider(oamProvider);
+
+    widget.centralBody.depthTestAgainstTerrain = true;
+
+
+    var terrainProvider = new Cesium.CesiumTerrainProvider({
+       url : 'http://cesium.agi.com/smallterrain'
+    });
+    widget.centralBody.terrainProvider = terrainProvider;
+
+
+    var addPoint = function(lon, lat, elev) {
+        var e = new Cesium.EllipsoidPrimitive();
+        e.center = ellipsoid.cartographicToCartesian(
+            Cesium.Cartographic.fromDegrees(lon, lat, elev));
+        e.radii = new Cesium.Cartesian3(100, 100, 100);
+        e.material = Cesium.Material.fromType(undefined, Cesium.Material.RimLightingType);
+        primitives.add(e);
+    }
+
+
+    //primitives.add(new Box2(ellipsoid.cartographicToCartesian(Cesium.Cartographic.fromDegrees(center_lon, center_lat,  center_vert))));
+    var box = new Box(ellipsoid.cartographicToCartesian(Cesium.Cartographic.fromDegrees(0, 0, 0)));
+    primitives.add(box);
+
+    // put a sphere at the edge of our space
+    /*
+    addPoint(east, south, upper);
+    addPoint(east, north, upper);
+    addPoint(west, north, upper);
+    addPoint(west, south, upper);
+
+    addPoint(east, north, lower);
+    addPoint(west, north, lower);
+    addPoint(west, south, lower)
+    addPoint(east, south, lower);
+    */
+
+    // look at our polygon
+
+    var extent = new Cesium.Extent(Cesium.Math.toRadians(west),
+                                   Cesium.Math.toRadians(south),
+                                   Cesium.Math.toRadians(east),
+                                   Cesium.Math.toRadians(north));
+    var cc = scene.getCamera().controller;
+    cc.viewExtent(extent, ellipsoid);
+    cc.moveBackward(1000);
+    cc.moveDown(4000);
+    cc.lookUp(Math.PI / 2.5);
+
+  </script>
+</body>
+</html>
