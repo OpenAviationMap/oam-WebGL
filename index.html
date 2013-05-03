@@ -3,7 +3,6 @@
   <head>
     <title>Open Aviation Map WebGL viewer</title>
     <script type="text/javascript" src="lib/Cesium/Cesium.js"></script>
-    <script type="text/javascript" src="poly2tri.js"></script>
     <script type="text/javascript" src="AirspaceTessellator.js"></script>
     <script type="text/javascript" src="Box.js"></script>
     <style>
@@ -19,6 +18,41 @@
   <div id="cesiumContainer" class="fullSize"></div>
   <div id="buttons"></div>
   <script>
+    var addAirspace = function(airspace, primitives) {
+        var box = new Box(airspace);
+        primitives.add(box);
+
+        var c = new Cesium.Cartographic();
+
+        var upperPoints = [];
+        var lowerPoints = [];
+        for (var i = 2; i < airspace.poslist.length; i += 2) {
+            c.latitude  = Cesium.Math.toRadians(airspace.poslist[i]);
+            c.longitude = Cesium.Math.toRadians(airspace.poslist[i+1]);
+            c.height    = airspace.upper;
+
+            var v = ellipsoid.cartographicToCartesian(c);
+            upperPoints.push(v);
+
+            c.height    = airspace.lower;
+            v = ellipsoid.cartographicToCartesian(c);
+            lowerPoints.push(v);
+        }
+
+        var upperPoly = new Cesium.Polygon();
+        upperPoly.setPositions(upperPoints);
+        upperPoly.height = airspace.upper;
+        upperPoly.material.uniforms.color = airspace.color;
+        primitives.add(upperPoly);
+
+        var lowerPoly = new Cesium.Polygon();
+        lowerPoly.setPositions(lowerPoints);
+        lowerPoly.height = airspace.lower;
+        lowerPoly.material.uniforms.color = airspace.color;
+        primitives.add(lowerPoly);
+    };
+
+
     var bg = new Cesium.SingleTileImageryProvider({
         url: 'white.png'
     });
@@ -148,54 +182,18 @@
         poslist: [ 47.200833333333335, 19.998055555555556, 47.10166666666667, 19.458055555555553, 47.0675, 19.275, 47.044444444444444, 20.074444444444445, 47.200833333333335, 19.998055555555556 ]
     };
 
-    var box = new Box(lhr1);
-    var bounds = box._colorCommand.boundingVolume;
-    primitives.add(box);
-
-    box = new Box(lhr1a);
-    bounds = bounds.union(box._colorCommand.boundingVolume);
-    primitives.add(box);
-
-    box = new Box(lhbp_ctr);
-    bounds = bounds.union(box._colorCommand.boundingVolume);
-    primitives.add(box);
-
-    box = new Box(budapest_tma1);
-    bounds = bounds.union(box._colorCommand.boundingVolume);
-    primitives.add(box);
-
-    box = new Box(budapest_tma2);
-    bounds = bounds.union(box._colorCommand.boundingVolume);
-    primitives.add(box);
-
-    box = new Box(budapest_tma3);
-    bounds = bounds.union(box._colorCommand.boundingVolume);
-    primitives.add(box);
-
-    box = new Box(budapest_tma4);
-    bounds = bounds.union(box._colorCommand.boundingVolume);
-    primitives.add(box);
-
-    box = new Box(budapest_tma5);
-    bounds = bounds.union(box._colorCommand.boundingVolume);
-    primitives.add(box);
-
-
-    box = new Box(budapest_tma6);
-    bounds = bounds.union(box._colorCommand.boundingVolume);
-    primitives.add(box);
-
-    box = new Box(budapest_tma7);
-    bounds = bounds.union(box._colorCommand.boundingVolume);
-    primitives.add(box);
-
-    box = new Box(budapest_tma8);
-    bounds = bounds.union(box._colorCommand.boundingVolume);
-    primitives.add(box);
-
-    box = new Box(budapest_tma9);
-    bounds = bounds.union(box._colorCommand.boundingVolume);
-    primitives.add(box);
+    addAirspace(lhr1, primitives);
+    addAirspace(lhr1a, primitives);
+    addAirspace(lhbp_ctr, primitives);
+    addAirspace(budapest_tma1, primitives);
+    addAirspace(budapest_tma2, primitives);
+    addAirspace(budapest_tma3, primitives);
+    addAirspace(budapest_tma4, primitives);
+    addAirspace(budapest_tma5, primitives);
+    addAirspace(budapest_tma6, primitives);
+    addAirspace(budapest_tma7, primitives);
+    addAirspace(budapest_tma8, primitives);
+    addAirspace(budapest_tma9, primitives);
 
 
     // put a sphere at the edge of our space

@@ -1,22 +1,6 @@
 
     //var ellipsoid = Cesium.Ellipsoid.WGS84;
 
-    // let's make the area 1 degree larger in each direction
-    /*
-    var west = 18.93888888888889;
-    var east = 18.965555555555554;
-    var north = 47.531666666666666;
-    var south = 47.5225;
-
-    var lower = 0;
-    var upper = 1066;
-
-    var center_lat = (north + south) / 2.0;
-    var center_lon = (west + east) / 2.0;
-    var center_vert = (upper + lower) / 2.0;
-    */
-
-
     var Box = function(airspace) {
         this._airspace = airspace;
 
