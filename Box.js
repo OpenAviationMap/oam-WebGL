@@ -2,6 +2,7 @@
     //var ellipsoid = Cesium.Ellipsoid.WGS84;
 
     // let's make the area 1 degree larger in each direction
+    /*
     var west = 18.93888888888889;
     var east = 18.965555555555554;
     var north = 47.531666666666666;
@@ -13,9 +14,12 @@
     var center_lat = (north + south) / 2.0;
     var center_lon = (west + east) / 2.0;
     var center_vert = (upper + lower) / 2.0;
+    */
 
 
-    var Box = function(position) {
+    var Box = function(airspace) {
+        this._airspace = airspace;
+
         this._ellipsoid = ellipsoid;
         this._pickId = undefined;
 
@@ -34,15 +38,13 @@
             position3D : 1
         };
 
-        this._position = position;
         this._modelMatrix = undefined;
         this.morphTime = 1.0;
 
         var that = this;
         this._colorCommand.uniformMap = {
             u_color : function() {
-                var color = new Cesium.Color(1.0, 0, 0, 0.4);
-                color.alpha = 0.2;
+                var color = that._airspace.color;
                 return color;
             },
             u_morphTime : function() {
@@ -73,19 +75,7 @@
                 this.morphTime = mode.morphTime;
             }
 
-            var zLength = this._ellipsoid.getRadii().getMaximumComponent() * 0.1;
-            var x = zLength * 0.1;
-            var y = zLength * 0.5;
-            var z = zLength;
-
-            var c = Cesium.Cartographic.fromDegrees(east, south, lower);
-            var d = Cesium.Cartographic.fromDegrees(west, north, upper);
-
-            var mesh = BoxTessellator.compute({
-                minimumCorner : c,
-                maximumCorner : d
-            });
-            //var mesh = Cesium.MeshFilters.toWireframeInPlace(mesh);
+            var mesh = AirspaceTessellator.compute(this._airspace);
 
             mesh.attributes.position3D = mesh.attributes.position;
             delete mesh.attributes.position;
@@ -95,11 +85,7 @@
                     value : [0.0, 0.0]
                 };
 
-                Cesium.BoundingSphere.fromPoints([
-                                                  ellipsoid.cartographicToCartesian(c),
-                                                  ellipsoid.cartographicToCartesian(d),
-                                                 ],
-                                                 colorCommand.boundingVolume);
+                colorCommand.boundingVolume = Cesium.BoundingSphere.fromVertices(mesh.attributes.position3D.values);
 
             } else {
                 var positions = mesh.attributes.position3D.values;
@@ -140,22 +126,12 @@
                 };
             }
 
-            
             colorCommand.vertexArray = colorCommand.vertexArray && colorCommand.vertexArray.destroy();
             colorCommand.vertexArray = pickCommand.vertexArray = context.createVertexArrayFromMesh({
                 mesh : mesh,
                 attributeIndices : this._attributeIndices,
                 bufferUsage : Cesium.BufferUsage.STATIC_DRAW
             });
-
-            /*
-            colorCommand.vertexArray = pickCommand.vertexArray = context.createVertexArrayFromMesh({
-                mesh             : mesh,
-                attributeIndices : Cesium.MeshFilters.createAttributeIndices(mesh),
-                bufferUsage      : Cesium.BufferUsage.STATIC_DRAW,
-                vertexLayout     : Cesium.VertexLayout.INTERLEAVED
-            });
-            */
         }
 
         if (typeof colorCommand.shaderProgram === 'undefined') {
