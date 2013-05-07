@@ -18,6 +18,9 @@
   <div id="cesiumContainer" class="fullSize"></div>
   <div id="buttons"></div>
   <script>
+    var widget = new Cesium.CesiumWidget('cesiumContainer');
+    var scene = widget.scene;
+
     var addAirspace = function(airspace, primitives) {
         var box = new Box(airspace);
         primitives.add(box);
@@ -43,12 +46,30 @@
         upperPoly.setPositions(upperPoints);
         upperPoly.height = airspace.upper;
         upperPoly.material.uniforms.color = airspace.color;
+
+        // fix so that the polygon goes through a depth test
+        upperPoly._rs = scene.getContext().createRenderState( {
+            depthTest : {
+                enabled : true,
+                func : Cesium.DepthFunction.LESS
+            },
+            blending : Cesium.BlendingState.ALPHA_BLEND
+        });
         primitives.add(upperPoly);
 
         var lowerPoly = new Cesium.Polygon();
         lowerPoly.setPositions(lowerPoints);
         lowerPoly.height = airspace.lower;
         lowerPoly.material.uniforms.color = airspace.color;
+
+        // fix so that the polygon goes through a depth test
+        lowerPoly._rs = scene.getContext().createRenderState( {
+            depthTest : {
+                enabled : true,
+                func : Cesium.DepthFunction.LESS
+            },
+            blending : Cesium.BlendingState.ALPHA_BLEND
+        });
         primitives.add(lowerPoly);
     };
 
@@ -67,8 +88,6 @@
         credit: 'Open Aviation Map'
     });
 
-    var widget = new Cesium.CesiumWidget('cesiumContainer');
-    var scene = widget.scene;
     var ellipsoid = widget.centralBody.getEllipsoid();
     var primitives = scene.getPrimitives();
 
