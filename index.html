@@ -117,6 +117,8 @@
         primitives.add(e);
     }
 
+    /*
+
     var lhr1 = {
         color: new Cesium.Color(1.0, 0, 0, 0.4),
         lower: 0,
@@ -214,6 +216,7 @@
     addAirspace(budapest_tma8, primitives);
     addAirspace(budapest_tma9, primitives);
 
+    */
 
     // put a sphere at the edge of our space
     var west = 18.93888888888889;
@@ -247,6 +250,148 @@
     cc.moveDown(4000);
     cc.lookUp(Math.PI / 2.5);
 
+
+        function nsResolver(prefix) {
+            var ns = {
+                'message'   : 'http://www.aixm.aero/schema/5.1/message',
+                'gmd'       : 'http://www.isotc211.org/2005/gmd',
+                'gco'       : 'http://www.isotc211.org/2005/gco',
+                'xlink'     : 'http://www.w3.org/1999/xlink',
+                'gml'       : 'http://www.opengis.net/gml/3.2',
+                'gts'       : 'http://www.isotc211.org/2005/gts',
+                'xsi'       : 'http://www.w3.org/2001/XMLSchema-instance',
+                'aixm'      : 'http://www.aixm.aero/schema/5.1'
+            };
+
+            return ns[prefix] || null;
+        }
+
+        function reqListener () {
+            var doc = this.responseXML;
+            var it = doc.evaluate('//aixm:AirspaceTimeSlice', doc, nsResolver,
+                                  XPathResult.UNORDERED_NODE_ITERATOR_TYPE, null);
+
+            var xpResult;
+            for (var airspaceNode = it.iterateNext(); airspaceNode; airspaceNode = it.iterateNext()) {
+
+                // get the type
+                var xpResult = doc.evaluate('aixm:type', airspaceNode, nsResolver,
+                                            XPathResult.STRING_TYPE, null);
+                var type = xpResult.stringValue;
+                console.log(type);
+
+                // get the designator
+                xpResult = doc.evaluate('aixm:designator', airspaceNode, nsResolver,
+                                        XPathResult.STRING_TYPE, null);
+                var designator = xpResult.stringValue;
+                console.log(designator);
+
+                // get the upper bounds
+                xpResult = doc.evaluate('.//aixm:upperLimit', airspaceNode, nsResolver,
+                                        XPathResult.FIRST_ORDERED_NODE_TYPE, null);
+                var upperLimitNode = xpResult.singleNodeValue;
+                var upperLimit = upperLimitNode.firstChild.nodeValue;
+                var upperLimitUom = upperLimitNode.attributes['uom'].value;
+                console.log(upperLimit + upperLimitUom);
+
+                xpResult = doc.evaluate('.//aixm:upperLimitReference', airspaceNode, nsResolver,
+                                        XPathResult.FIRST_ORDERED_NODE_TYPE, null);
+                var upperLimitRefNode = xpResult.singleNodeValue;
+                var upperLimitRef = upperLimitRefNode.firstChild.nodeValue;
+                console.log(upperLimitRef);
+
+                // get the lower bounds
+                xpResult = doc.evaluate('.//aixm:lowerLimit', airspaceNode, nsResolver,
+                                        XPathResult.FIRST_ORDERED_NODE_TYPE, null);
+                var lowerLimitNode = xpResult.singleNodeValue;
+                var lowerLimit = lowerLimitNode.firstChild.nodeValue;
+                var lowerLimitUom = lowerLimitNode.attributes['uom'].value;
+                console.log(lowerLimit + lowerLimitUom);
+
+                xpResult = doc.evaluate('.//aixm:lowerLimitReference', airspaceNode, nsResolver,
+                                        XPathResult.FIRST_ORDERED_NODE_TYPE, null);
+                var lowerLimitRefNode = xpResult.singleNodeValue;
+                var lowerLimitRef = lowerLimitRefNode.firstChild.nodeValue;
+                console.log(lowerLimitRef);
+
+                // extract the airspace horizontal shape
+                xpResult = doc.evaluate('.//aixm:horizontalProjection', airspaceNode, nsResolver,
+                                        XPathResult.FIRST_ORDERED_NODE_TYPE, null);
+                var horizProjNode = xpResult.singleNodeValue;
+
+                // only deal with simple polygons for now
+                var iit = doc.evaluate('.//gml:posList', horizProjNode, nsResolver,
+                                       XPathResult.UNORDERED_NODE_ITERATOR_TYPE, null);
+                var posListNode = iit.iterateNext();
+                console.log(posListNode);
+                if (posListNode == null) {
+                    console.log('no posList');
+                    continue;
+                } else if (iit.iterateNext() != null) {
+                    console.log('multiple posLists');
+                    continue;
+                } else {
+                    var posListString = posListNode.firstChild.nodeValue;
+                    console.log(posListString);
+                }
+
+                // TODO: extract this into an UOM class with conversions
+                var lowerInM;
+                switch (lowerLimitUom) {
+                    case 'FT': lowerInM = parseFloat(lowerLimit) * 0.3048; break;
+                    case 'FL': lowerInM = 100.0 * parseFloat(lowerLimit) * 0.3048; break;
+                    default: lowerInM = parseFloat(lowerLimit); break;
+                }
+
+                var upperInM;
+                switch (upperLimitUom) {
+                    case 'FT': upperInM = parseFloat(upperLimit) * 0.3048; break;
+                    case 'FL': upperInM = 100.0 * parseFloat(upperLimit) * 0.3048; break;
+                    default: upperInM = parseFloat(upperLimit); break;
+                }
+
+                // TODO: put this logic inside the Airspace class
+                var color;
+                switch (type) {
+                    case 'P': color = new Cesium.Color(1, 0, 0, 0.4); break;
+                    case 'R': color = new Cesium.Color(1, 0, 0, 0.4); break;
+                    case 'D': color = new Cesium.Color(1, 0, 0, 0.4); break;
+                    case 'TRA': color = new Cesium.Color(0.5, 0, 1, 0.4); break;
+                    case 'SA': color = new Cesium.Color(0, 0, 1, 0.4); break;
+                    case 'SG': color = new Cesium.Color(0, 0, 1, 0.4); break;
+                    case 'B': color = new Cesium.Color(0, 1, 0, 0.4); break;
+                    default: color = new Cesium.Color(1, 1, 1, 0.4); break;
+                }
+
+                var posListSplit = posListString.split(" ");
+                var posList = [];
+                for (var i = 0; i < posListSplit.length; ++i) {
+                    posList[i] = parseFloat(posListSplit[i]);
+                }
+                console.log(posList);
+
+                var airspace = {
+                    color: color,
+                    lower: lowerInM,
+                    upper: upperInM,
+                    poslist: posList
+                };
+
+                addAirspace(airspace, primitives);
+            }
+        };
+
+        var aixmFiles = [ "var/hungary-5.1.aixm51",
+                          "var/hungary-5.2.aixm51",
+                          "var/hungary-5.5.aixm51",
+                          "var/hungary-5.6.aixm51" ];
+
+        for (var i = 0; i < aixmFiles.length; ++i) {
+            var oReq = new XMLHttpRequest();
+            oReq.onload = reqListener;
+            oReq.open("get", aixmFiles[i], true);
+            oReq.send();
+        }
   </script>
 </body>
 </html>

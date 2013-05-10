@@ -1,0 +1,2766 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<message:AIXMBasicMessage xmlns:message="http://www.aixm.aero/schema/5.1/message"
+                          xmlns:gmd="http://www.isotc211.org/2005/gmd"
+                          xmlns:gco="http://www.isotc211.org/2005/gco"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          xmlns:gml="http://www.opengis.net/gml/3.2"
+                          xmlns:gts="http://www.isotc211.org/2005/gts"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xmlns:aixm="http://www.aixm.aero/schema/5.1"
+                          gml:id="uuid.e39cf53b-f75a-45fe-9bfb-960a7dd3ad97">
+   <gml:boundedBy xsi:nil="true"/>
+   <message:hasMember xlink:type="simple">
+      <aixm:Airspace gml:id="uuid.a99575b7-c5d3-4542-ba5f-46e7716ab979">
+         <gml:identifier codeSpace="urn:uuid:">a99575b7-c5d3-4542-ba5f-46e7716ab979</gml:identifier>
+         <gml:boundedBy xsi:nil="true"/>
+         <aixm:timeSlice>
+            <aixm:AirspaceTimeSlice gml:id="uuid.c53f76fc-6765-497e-950e-798c9a1fb402">
+               <gml:validTime xlink:type="simple">
+                  <gml:TimePeriod>
+                     <gml:beginPosition>2012-04-08T00:00:00Z</gml:beginPosition>
+                     <gml:endPosition indeterminatePosition="unknown"/>
+                  </gml:TimePeriod>
+               </gml:validTime>
+               <aixm:interpretation>BASELINE</aixm:interpretation>
+               <aixm:sequenceNumber>1</aixm:sequenceNumber>
+               <aixm:correctionNumber>0</aixm:correctionNumber>
+               <aixm:type>TRA</aixm:type>
+               <aixm:designator>LHTRA11A</aixm:designator>
+               <aixm:localType xsi:nil="true"/>
+               <aixm:name>PAPA ALPHA</aixm:name>
+               <aixm:designatorICAO>yes</aixm:designatorICAO>
+               <aixm:controlType>CIVIL</aixm:controlType>
+               <aixm:upperLowerSeparation xsi:nil="true"/>
+               <aixm:protectedRoute xsi:nil="true"/>
+               <aixm:geometryComponent>
+                  <aixm:AirspaceGeometryComponent>
+                     <aixm:operation xsi:nil="true"/>
+                     <aixm:operationSequence xsi:nil="true"/>
+                     <aixm:theAirspaceVolume>
+                        <aixm:AirspaceVolume>
+                           <aixm:upperLimit uom="FL">125.0</aixm:upperLimit>
+                           <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+                           <aixm:maximumLimit xsi:nil="true"/>
+                           <aixm:maximumLimitReference xsi:nil="true"/>
+                           <aixm:lowerLimit uom="FT">0.0</aixm:lowerLimit>
+                           <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
+                           <aixm:minimumLimit xsi:nil="true"/>
+                           <aixm:minimumLimitReference xsi:nil="true"/>
+                           <aixm:width xsi:nil="true"/>
+                           <aixm:horizontalProjection>
+                              <aixm:Surface srsName="urn:ogc:def:crs:EPSG:4326">
+                                 <gml:patches>
+                                    <gml:PolygonPatch interpolation="planar">
+                                       <gml:exterior>
+                                          <gml:Ring>
+                                             <gml:curveMember xlink:type="simple">
+                                                <gml:Curve>
+                                                   <gml:segments>
+                                                      <gml:GeodesicString interpolation="geodesic">
+                                                         <gml:posList>47.499722222222225 17.8375 47.499722222222225 18.258055555555554 47.22527777777778 18.251944444444444 47.21638888888889 17.983333333333334 47.499722222222225 17.8375</gml:posList>
+                                                      </gml:GeodesicString>
+                                                   </gml:segments>
+                                                </gml:Curve>
+                                             </gml:curveMember>
+                                          </gml:Ring>
+                                       </gml:exterior>
+                                    </gml:PolygonPatch>
+                                 </gml:patches>
+                                 <aixm:horizontalAccuracy xsi:nil="true"/>
+                              </aixm:Surface>
+                           </aixm:horizontalProjection>
+                           <aixm:centreline xsi:nil="true"/>
+                           <aixm:contributorAirspace xsi:nil="true"/>
+                        </aixm:AirspaceVolume>
+                     </aixm:theAirspaceVolume>
+                  </aixm:AirspaceGeometryComponent>
+               </aixm:geometryComponent>
+               <aixm:annotation>
+                  <aixm:Note>
+                     <aixm:propertyName xsi:nil="true"/>
+                     <aixm:purpose>REMARK</aixm:purpose>
+                     <aixm:translatedNote>
+                        <aixm:LinguisticNote>
+                           <aixm:note lang="eng"/>
+                        </aixm:LinguisticNote>
+                     </aixm:translatedNote>
+                  </aixm:Note>
+               </aixm:annotation>
+            </aixm:AirspaceTimeSlice>
+         </aixm:timeSlice>
+      </aixm:Airspace>
+   </message:hasMember>
+   <message:hasMember xlink:type="simple">
+      <aixm:Airspace gml:id="uuid.00c2c9c5-ea54-4695-9d27-929ba36602ab">
+         <gml:identifier codeSpace="urn:uuid:">00c2c9c5-ea54-4695-9d27-929ba36602ab</gml:identifier>
+         <gml:boundedBy xsi:nil="true"/>
+         <aixm:timeSlice>
+            <aixm:AirspaceTimeSlice gml:id="uuid.239e83bd-6896-4d41-8a25-cae8a25a5dd0">
+               <gml:validTime xlink:type="simple">
+                  <gml:TimePeriod>
+                     <gml:beginPosition>2012-04-08T00:00:00Z</gml:beginPosition>
+                     <gml:endPosition indeterminatePosition="unknown"/>
+                  </gml:TimePeriod>
+               </gml:validTime>
+               <aixm:interpretation>BASELINE</aixm:interpretation>
+               <aixm:sequenceNumber>1</aixm:sequenceNumber>
+               <aixm:correctionNumber>0</aixm:correctionNumber>
+               <aixm:type>TRA</aixm:type>
+               <aixm:designator>LHTRA11B</aixm:designator>
+               <aixm:localType xsi:nil="true"/>
+               <aixm:name>PAPA BRAVO</aixm:name>
+               <aixm:designatorICAO>yes</aixm:designatorICAO>
+               <aixm:controlType>CIVIL</aixm:controlType>
+               <aixm:upperLowerSeparation xsi:nil="true"/>
+               <aixm:protectedRoute xsi:nil="true"/>
+               <aixm:geometryComponent>
+                  <aixm:AirspaceGeometryComponent>
+                     <aixm:operation xsi:nil="true"/>
+                     <aixm:operationSequence xsi:nil="true"/>
+                     <aixm:theAirspaceVolume>
+                        <aixm:AirspaceVolume>
+                           <aixm:upperLimit uom="FT">9500.0</aixm:upperLimit>
+                           <aixm:upperLimitReference>MSL</aixm:upperLimitReference>
+                           <aixm:maximumLimit xsi:nil="true"/>
+                           <aixm:maximumLimitReference xsi:nil="true"/>
+                           <aixm:lowerLimit uom="FT">4000.0</aixm:lowerLimit>
+                           <aixm:lowerLimitReference>MSL</aixm:lowerLimitReference>
+                           <aixm:minimumLimit xsi:nil="true"/>
+                           <aixm:minimumLimitReference xsi:nil="true"/>
+                           <aixm:width xsi:nil="true"/>
+                           <aixm:horizontalProjection>
+                              <aixm:Surface srsName="urn:ogc:def:crs:EPSG:4326">
+                                 <gml:patches>
+                                    <gml:PolygonPatch interpolation="planar">
+                                       <gml:exterior>
+                                          <gml:Ring>
+                                             <gml:curveMember xlink:type="simple">
+                                                <gml:Curve>
+                                                   <gml:segments>
+                                                      <gml:GeodesicString interpolation="geodesic">
+                                                         <gml:posList>47.21638888888889 17.983333333333334 47.22527777777778 18.251944444444444 47.03666666666666 18.249166666666667 46.92472222222222 17.859722222222224 47.11277777777778 17.726388888888888 47.21638888888889 17.983333333333334</gml:posList>
+                                                      </gml:GeodesicString>
+                                                   </gml:segments>
+                                                </gml:Curve>
+                                             </gml:curveMember>
+                                          </gml:Ring>
+                                       </gml:exterior>
+                                    </gml:PolygonPatch>
+                                 </gml:patches>
+                                 <aixm:horizontalAccuracy xsi:nil="true"/>
+                              </aixm:Surface>
+                           </aixm:horizontalProjection>
+                           <aixm:centreline xsi:nil="true"/>
+                           <aixm:contributorAirspace xsi:nil="true"/>
+                        </aixm:AirspaceVolume>
+                     </aixm:theAirspaceVolume>
+                  </aixm:AirspaceGeometryComponent>
+               </aixm:geometryComponent>
+               <aixm:annotation>
+                  <aixm:Note>
+                     <aixm:propertyName xsi:nil="true"/>
+                     <aixm:purpose>REMARK</aixm:purpose>
+                     <aixm:translatedNote>
+                        <aixm:LinguisticNote>
+                           <aixm:note lang="eng"/>
+                        </aixm:LinguisticNote>
+                     </aixm:translatedNote>
+                  </aixm:Note>
+               </aixm:annotation>
+            </aixm:AirspaceTimeSlice>
+         </aixm:timeSlice>
+      </aixm:Airspace>
+   </message:hasMember>
+   <message:hasMember xlink:type="simple">
+      <aixm:Airspace gml:id="uuid.26d413aa-9268-48d6-8034-858b26489635">
+         <gml:identifier codeSpace="urn:uuid:">26d413aa-9268-48d6-8034-858b26489635</gml:identifier>
+         <gml:boundedBy xsi:nil="true"/>
+         <aixm:timeSlice>
+            <aixm:AirspaceTimeSlice gml:id="uuid.6ac3136c-a0b5-4093-8752-6591fbe37833">
+               <gml:validTime xlink:type="simple">
+                  <gml:TimePeriod>
+                     <gml:beginPosition>2012-04-08T00:00:00Z</gml:beginPosition>
+                     <gml:endPosition indeterminatePosition="unknown"/>
+                  </gml:TimePeriod>
+               </gml:validTime>
+               <aixm:interpretation>BASELINE</aixm:interpretation>
+               <aixm:sequenceNumber>1</aixm:sequenceNumber>
+               <aixm:correctionNumber>0</aixm:correctionNumber>
+               <aixm:type>TRA</aixm:type>
+               <aixm:designator>LHTRA11C</aixm:designator>
+               <aixm:localType xsi:nil="true"/>
+               <aixm:name>PAPA CHARLIE</aixm:name>
+               <aixm:designatorICAO>yes</aixm:designatorICAO>
+               <aixm:controlType>CIVIL</aixm:controlType>
+               <aixm:upperLowerSeparation xsi:nil="true"/>
+               <aixm:protectedRoute xsi:nil="true"/>
+               <aixm:geometryComponent>
+                  <aixm:AirspaceGeometryComponent>
+                     <aixm:operation xsi:nil="true"/>
+                     <aixm:operationSequence xsi:nil="true"/>
+                     <aixm:theAirspaceVolume>
+                        <aixm:AirspaceVolume>
+                           <aixm:upperLimit uom="FT">4000.0</aixm:upperLimit>
+                           <aixm:upperLimitReference>MSL</aixm:upperLimitReference>
+                           <aixm:maximumLimit xsi:nil="true"/>
+                           <aixm:maximumLimitReference xsi:nil="true"/>
+                           <aixm:lowerLimit uom="FT">0.0</aixm:lowerLimit>
+                           <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
+                           <aixm:minimumLimit xsi:nil="true"/>
+                           <aixm:minimumLimitReference xsi:nil="true"/>
+                           <aixm:width xsi:nil="true"/>
+                           <aixm:horizontalProjection>
+                              <aixm:Surface srsName="urn:ogc:def:crs:EPSG:4326">
+                                 <gml:patches>
+                                    <gml:PolygonPatch interpolation="planar">
+                                       <gml:exterior>
+                                          <gml:Ring>
+                                             <gml:curveMember xlink:type="simple">
+                                                <gml:Curve>
+                                                   <gml:segments>
+                                                      <gml:GeodesicString interpolation="geodesic">
+                                                         <gml:posList>47.21638888888889 17.983333333333334 47.22527777777778 18.251944444444444 47.03666666666666 18.249166666666667 46.92472222222222 17.859722222222224 47.11277777777778 17.726388888888888 47.21638888888889 17.983333333333334</gml:posList>
+                                                      </gml:GeodesicString>
+                                                   </gml:segments>
+                                                </gml:Curve>
+                                             </gml:curveMember>
+                                          </gml:Ring>
+                                       </gml:exterior>
+                                    </gml:PolygonPatch>
+                                 </gml:patches>
+                                 <aixm:horizontalAccuracy xsi:nil="true"/>
+                              </aixm:Surface>
+                           </aixm:horizontalProjection>
+                           <aixm:centreline xsi:nil="true"/>
+                           <aixm:contributorAirspace xsi:nil="true"/>
+                        </aixm:AirspaceVolume>
+                     </aixm:theAirspaceVolume>
+                  </aixm:AirspaceGeometryComponent>
+               </aixm:geometryComponent>
+               <aixm:annotation>
+                  <aixm:Note>
+                     <aixm:propertyName xsi:nil="true"/>
+                     <aixm:purpose>REMARK</aixm:purpose>
+                     <aixm:translatedNote>
+                        <aixm:LinguisticNote>
+                           <aixm:note lang="eng"/>
+                        </aixm:LinguisticNote>
+                     </aixm:translatedNote>
+                  </aixm:Note>
+               </aixm:annotation>
+            </aixm:AirspaceTimeSlice>
+         </aixm:timeSlice>
+      </aixm:Airspace>
+   </message:hasMember>
+   <message:hasMember xlink:type="simple">
+      <aixm:Airspace gml:id="uuid.c594caee-8fa4-4ea4-ad4a-a19a9b0fee30">
+         <gml:identifier codeSpace="urn:uuid:">c594caee-8fa4-4ea4-ad4a-a19a9b0fee30</gml:identifier>
+         <gml:boundedBy xsi:nil="true"/>
+         <aixm:timeSlice>
+            <aixm:AirspaceTimeSlice gml:id="uuid.b486a652-8b17-4259-998d-dcdba91dc89d">
+               <gml:validTime xlink:type="simple">
+                  <gml:TimePeriod>
+                     <gml:beginPosition>2012-04-08T00:00:00Z</gml:beginPosition>
+                     <gml:endPosition indeterminatePosition="unknown"/>
+                  </gml:TimePeriod>
+               </gml:validTime>
+               <aixm:interpretation>BASELINE</aixm:interpretation>
+               <aixm:sequenceNumber>1</aixm:sequenceNumber>
+               <aixm:correctionNumber>0</aixm:correctionNumber>
+               <aixm:type>TRA</aixm:type>
+               <aixm:designator>LHTRA12</aixm:designator>
+               <aixm:localType xsi:nil="true"/>
+               <aixm:name>KUNSAG</aixm:name>
+               <aixm:designatorICAO>yes</aixm:designatorICAO>
+               <aixm:controlType>CIVIL</aixm:controlType>
+               <aixm:upperLowerSeparation xsi:nil="true"/>
+               <aixm:protectedRoute xsi:nil="true"/>
+               <aixm:geometryComponent>
+                  <aixm:AirspaceGeometryComponent>
+                     <aixm:operation xsi:nil="true"/>
+                     <aixm:operationSequence xsi:nil="true"/>
+                     <aixm:theAirspaceVolume>
+                        <aixm:AirspaceVolume>
+                           <aixm:upperLimit uom="FL">115.0</aixm:upperLimit>
+                           <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+                           <aixm:maximumLimit xsi:nil="true"/>
+                           <aixm:maximumLimitReference xsi:nil="true"/>
+                           <aixm:lowerLimit uom="FT">0.0</aixm:lowerLimit>
+                           <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
+                           <aixm:minimumLimit xsi:nil="true"/>
+                           <aixm:minimumLimitReference xsi:nil="true"/>
+                           <aixm:width xsi:nil="true"/>
+                           <aixm:horizontalProjection>
+                              <aixm:Surface srsName="urn:ogc:def:crs:EPSG:4326">
+                                 <gml:patches>
+                                    <gml:PolygonPatch interpolation="planar">
+                                       <gml:exterior>
+                                          <gml:Ring>
+                                             <gml:curveMember xlink:type="simple">
+                                                <gml:Curve>
+                                                   <gml:segments>
+                                                      <gml:GeodesicString interpolation="geodesic">
+                                                         <gml:posList>46.99583333333334 19.045 47.0675 19.275 46.827222222222225 19.498333333333335 46.66638888888889 19.498333333333335 46.66583333333333 19.37027777777778 46.99583333333334 19.045</gml:posList>
+                                                      </gml:GeodesicString>
+                                                   </gml:segments>
+                                                </gml:Curve>
+                                             </gml:curveMember>
+                                          </gml:Ring>
+                                       </gml:exterior>
+                                    </gml:PolygonPatch>
+                                 </gml:patches>
+                                 <aixm:horizontalAccuracy xsi:nil="true"/>
+                              </aixm:Surface>
+                           </aixm:horizontalProjection>
+                           <aixm:centreline xsi:nil="true"/>
+                           <aixm:contributorAirspace xsi:nil="true"/>
+                        </aixm:AirspaceVolume>
+                     </aixm:theAirspaceVolume>
+                  </aixm:AirspaceGeometryComponent>
+               </aixm:geometryComponent>
+               <aixm:annotation>
+                  <aixm:Note>
+                     <aixm:propertyName xsi:nil="true"/>
+                     <aixm:purpose>REMARK</aixm:purpose>
+                     <aixm:translatedNote>
+                        <aixm:LinguisticNote>
+                           <aixm:note lang="eng"/>
+                        </aixm:LinguisticNote>
+                     </aixm:translatedNote>
+                  </aixm:Note>
+               </aixm:annotation>
+            </aixm:AirspaceTimeSlice>
+         </aixm:timeSlice>
+      </aixm:Airspace>
+   </message:hasMember>
+   <message:hasMember xlink:type="simple">
+      <aixm:Airspace gml:id="uuid.eb677329-d01e-4e52-bc43-edb844c2888c">
+         <gml:identifier codeSpace="urn:uuid:">eb677329-d01e-4e52-bc43-edb844c2888c</gml:identifier>
+         <gml:boundedBy xsi:nil="true"/>
+         <aixm:timeSlice>
+            <aixm:AirspaceTimeSlice gml:id="uuid.ed4a4d9e-2197-4826-8f74-c34e7e4106a5">
+               <gml:validTime xlink:type="simple">
+                  <gml:TimePeriod>
+                     <gml:beginPosition>2012-04-08T00:00:00Z</gml:beginPosition>
+                     <gml:endPosition indeterminatePosition="unknown"/>
+                  </gml:TimePeriod>
+               </gml:validTime>
+               <aixm:interpretation>BASELINE</aixm:interpretation>
+               <aixm:sequenceNumber>1</aixm:sequenceNumber>
+               <aixm:correctionNumber>0</aixm:correctionNumber>
+               <aixm:type>TRA</aixm:type>
+               <aixm:designator>LHTRA13</aixm:designator>
+               <aixm:localType xsi:nil="true"/>
+               <aixm:name>TISZA</aixm:name>
+               <aixm:designatorICAO>yes</aixm:designatorICAO>
+               <aixm:controlType>CIVIL</aixm:controlType>
+               <aixm:upperLowerSeparation xsi:nil="true"/>
+               <aixm:protectedRoute xsi:nil="true"/>
+               <aixm:geometryComponent>
+                  <aixm:AirspaceGeometryComponent>
+                     <aixm:operation xsi:nil="true"/>
+                     <aixm:operationSequence xsi:nil="true"/>
+                     <aixm:theAirspaceVolume>
+                        <aixm:AirspaceVolume>
+                           <aixm:upperLimit uom="FL">145.0</aixm:upperLimit>
+                           <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+                           <aixm:maximumLimit xsi:nil="true"/>
+                           <aixm:maximumLimitReference xsi:nil="true"/>
+                           <aixm:lowerLimit uom="FT">9500.0</aixm:lowerLimit>
+                           <aixm:lowerLimitReference>MSL</aixm:lowerLimitReference>
+                           <aixm:minimumLimit xsi:nil="true"/>
+                           <aixm:minimumLimitReference xsi:nil="true"/>
+                           <aixm:width xsi:nil="true"/>
+                           <aixm:horizontalProjection>
+                              <aixm:Surface srsName="urn:ogc:def:crs:EPSG:4326">
+                                 <gml:patches>
+                                    <gml:PolygonPatch interpolation="planar">
+                                       <gml:exterior>
+                                          <gml:Ring>
+                                             <gml:curveMember xlink:type="simple">
+                                                <gml:Curve>
+                                                   <gml:segments>
+                                                      <gml:GeodesicString interpolation="geodesic">
+                                                         <gml:posList>47.37 20.152777777777775 47.34388888888889 20.29527777777778 47.308055555555555 20.49138888888889 47.17916666666667 20.425555555555558 47.00222222222222 20.335555555555555 46.900277777777774 20.284166666666668 46.933055555555555 20.12472222222222 47.04472222222222 20.074444444444445 47.200833333333335 19.998055555555556 47.37 20.152777777777775</gml:posList>
+                                                      </gml:GeodesicString>
+                                                   </gml:segments>
+                                                </gml:Curve>
+                                             </gml:curveMember>
+                                          </gml:Ring>
+                                       </gml:exterior>
+                                    </gml:PolygonPatch>
+                                 </gml:patches>
+                                 <aixm:horizontalAccuracy xsi:nil="true"/>
+                              </aixm:Surface>
+                           </aixm:horizontalProjection>
+                           <aixm:centreline xsi:nil="true"/>
+                           <aixm:contributorAirspace xsi:nil="true"/>
+                        </aixm:AirspaceVolume>
+                     </aixm:theAirspaceVolume>
+                  </aixm:AirspaceGeometryComponent>
+               </aixm:geometryComponent>
+               <aixm:annotation>
+                  <aixm:Note>
+                     <aixm:propertyName xsi:nil="true"/>
+                     <aixm:purpose>REMARK</aixm:purpose>
+                     <aixm:translatedNote>
+                        <aixm:LinguisticNote>
+                           <aixm:note lang="eng"/>
+                        </aixm:LinguisticNote>
+                     </aixm:translatedNote>
+                  </aixm:Note>
+               </aixm:annotation>
+            </aixm:AirspaceTimeSlice>
+         </aixm:timeSlice>
+      </aixm:Airspace>
+   </message:hasMember>
+   <message:hasMember xlink:type="simple">
+      <aixm:Airspace gml:id="uuid.18d5daed-176a-467b-9dac-45afe603291a">
+         <gml:identifier codeSpace="urn:uuid:">18d5daed-176a-467b-9dac-45afe603291a</gml:identifier>
+         <gml:boundedBy xsi:nil="true"/>
+         <aixm:timeSlice>
+            <aixm:AirspaceTimeSlice gml:id="uuid.93872887-1c7a-423f-8a79-9c1c8801c043">
+               <gml:validTime xlink:type="simple">
+                  <gml:TimePeriod>
+                     <gml:beginPosition>2012-04-08T00:00:00Z</gml:beginPosition>
+                     <gml:endPosition indeterminatePosition="unknown"/>
+                  </gml:TimePeriod>
+               </gml:validTime>
+               <aixm:interpretation>BASELINE</aixm:interpretation>
+               <aixm:sequenceNumber>1</aixm:sequenceNumber>
+               <aixm:correctionNumber>0</aixm:correctionNumber>
+               <aixm:type>TRA</aixm:type>
+               <aixm:designator>LHTRA14A</aixm:designator>
+               <aixm:localType xsi:nil="true"/>
+               <aixm:name>MEZO ALPHA</aixm:name>
+               <aixm:designatorICAO>yes</aixm:designatorICAO>
+               <aixm:controlType>CIVIL</aixm:controlType>
+               <aixm:upperLowerSeparation xsi:nil="true"/>
+               <aixm:protectedRoute xsi:nil="true"/>
+               <aixm:geometryComponent>
+                  <aixm:AirspaceGeometryComponent>
+                     <aixm:operation xsi:nil="true"/>
+                     <aixm:operationSequence xsi:nil="true"/>
+                     <aixm:theAirspaceVolume>
+                        <aixm:AirspaceVolume>
+                           <aixm:upperLimit uom="FT">4500.0</aixm:upperLimit>
+                           <aixm:upperLimitReference>MSL</aixm:upperLimitReference>
+                           <aixm:maximumLimit xsi:nil="true"/>
+                           <aixm:maximumLimitReference xsi:nil="true"/>
+                           <aixm:lowerLimit uom="FT">0.0</aixm:lowerLimit>
+                           <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
+                           <aixm:minimumLimit xsi:nil="true"/>
+                           <aixm:minimumLimitReference xsi:nil="true"/>
+                           <aixm:width xsi:nil="true"/>
+                           <aixm:horizontalProjection>
+                              <aixm:Surface srsName="urn:ogc:def:crs:EPSG:4326">
+                                 <gml:patches>
+                                    <gml:PolygonPatch interpolation="planar">
+                                       <gml:exterior>
+                                          <gml:Ring>
+                                             <gml:curveMember xlink:type="simple">
+                                                <gml:Curve>
+                                                   <gml:segments>
+                                                      <gml:GeodesicString interpolation="geodesic">
+                                                         <gml:posList>47.308055555555555 20.49138888888889 47.212500000000006 20.758055555555554 47.10277777777778 20.720555555555553 47.17916666666667 20.425555555555558 47.308055555555555 20.49138888888889</gml:posList>
+                                                      </gml:GeodesicString>
+                                                   </gml:segments>
+                                                </gml:Curve>
+                                             </gml:curveMember>
+                                          </gml:Ring>
+                                       </gml:exterior>
+                                    </gml:PolygonPatch>
+                                 </gml:patches>
+                                 <aixm:horizontalAccuracy xsi:nil="true"/>
+                              </aixm:Surface>
+                           </aixm:horizontalProjection>
+                           <aixm:centreline xsi:nil="true"/>
+                           <aixm:contributorAirspace xsi:nil="true"/>
+                        </aixm:AirspaceVolume>
+                     </aixm:theAirspaceVolume>
+                  </aixm:AirspaceGeometryComponent>
+               </aixm:geometryComponent>
+               <aixm:annotation>
+                  <aixm:Note>
+                     <aixm:propertyName xsi:nil="true"/>
+                     <aixm:purpose>REMARK</aixm:purpose>
+                     <aixm:translatedNote>
+                        <aixm:LinguisticNote>
+                           <aixm:note lang="eng"/>
+                        </aixm:LinguisticNote>
+                     </aixm:translatedNote>
+                  </aixm:Note>
+               </aixm:annotation>
+            </aixm:AirspaceTimeSlice>
+         </aixm:timeSlice>
+      </aixm:Airspace>
+   </message:hasMember>
+   <message:hasMember xlink:type="simple">
+      <aixm:Airspace gml:id="uuid.a8c83d1b-6298-45e5-8c0f-2002796f0fa7">
+         <gml:identifier codeSpace="urn:uuid:">a8c83d1b-6298-45e5-8c0f-2002796f0fa7</gml:identifier>
+         <gml:boundedBy xsi:nil="true"/>
+         <aixm:timeSlice>
+            <aixm:AirspaceTimeSlice gml:id="uuid.a2731aec-4e29-4840-bf5d-9799d2a3dd6c">
+               <gml:validTime xlink:type="simple">
+                  <gml:TimePeriod>
+                     <gml:beginPosition>2012-04-08T00:00:00Z</gml:beginPosition>
+                     <gml:endPosition indeterminatePosition="unknown"/>
+                  </gml:TimePeriod>
+               </gml:validTime>
+               <aixm:interpretation>BASELINE</aixm:interpretation>
+               <aixm:sequenceNumber>1</aixm:sequenceNumber>
+               <aixm:correctionNumber>0</aixm:correctionNumber>
+               <aixm:type>TRA</aixm:type>
+               <aixm:designator>LHTRA14B</aixm:designator>
+               <aixm:localType xsi:nil="true"/>
+               <aixm:name>MEZO BRAVO</aixm:name>
+               <aixm:designatorICAO>yes</aixm:designatorICAO>
+               <aixm:controlType>CIVIL</aixm:controlType>
+               <aixm:upperLowerSeparation xsi:nil="true"/>
+               <aixm:protectedRoute xsi:nil="true"/>
+               <aixm:geometryComponent>
+                  <aixm:AirspaceGeometryComponent>
+                     <aixm:operation xsi:nil="true"/>
+                     <aixm:operationSequence xsi:nil="true"/>
+                     <aixm:theAirspaceVolume>
+                        <aixm:AirspaceVolume>
+                           <aixm:upperLimit uom="FT">4500.0</aixm:upperLimit>
+                           <aixm:upperLimitReference>MSL</aixm:upperLimitReference>
+                           <aixm:maximumLimit xsi:nil="true"/>
+                           <aixm:maximumLimitReference xsi:nil="true"/>
+                           <aixm:lowerLimit uom="FT">0.0</aixm:lowerLimit>
+                           <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
+                           <aixm:minimumLimit xsi:nil="true"/>
+                           <aixm:minimumLimitReference xsi:nil="true"/>
+                           <aixm:width xsi:nil="true"/>
+                           <aixm:horizontalProjection>
+                              <aixm:Surface srsName="urn:ogc:def:crs:EPSG:4326">
+                                 <gml:patches>
+                                    <gml:PolygonPatch interpolation="planar">
+                                       <gml:exterior>
+                                          <gml:Ring>
+                                             <gml:curveMember xlink:type="simple">
+                                                <gml:Curve>
+                                                   <gml:segments>
+                                                      <gml:GeodesicString interpolation="geodesic">
+                                                         <gml:posList>47.17916666666667 20.425555555555558 47.10277777777778 20.720555555555553 46.93694444444444 20.664166666666667 47.00222222222222 20.335555555555555 47.17916666666667 20.425555555555558</gml:posList>
+                                                      </gml:GeodesicString>
+                                                   </gml:segments>
+                                                </gml:Curve>
+                                             </gml:curveMember>
+                                          </gml:Ring>
+                                       </gml:exterior>
+                                    </gml:PolygonPatch>
+                                 </gml:patches>
+                                 <aixm:horizontalAccuracy xsi:nil="true"/>
+                              </aixm:Surface>
+                           </aixm:horizontalProjection>
+                           <aixm:centreline xsi:nil="true"/>
+                           <aixm:contributorAirspace xsi:nil="true"/>
+                        </aixm:AirspaceVolume>
+                     </aixm:theAirspaceVolume>
+                  </aixm:AirspaceGeometryComponent>
+               </aixm:geometryComponent>
+               <aixm:annotation>
+                  <aixm:Note>
+                     <aixm:propertyName xsi:nil="true"/>
+                     <aixm:purpose>REMARK</aixm:purpose>
+                     <aixm:translatedNote>
+                        <aixm:LinguisticNote>
+                           <aixm:note lang="eng"/>
+                        </aixm:LinguisticNote>
+                     </aixm:translatedNote>
+                  </aixm:Note>
+               </aixm:annotation>
+            </aixm:AirspaceTimeSlice>
+         </aixm:timeSlice>
+      </aixm:Airspace>
+   </message:hasMember>
+   <message:hasMember xlink:type="simple">
+      <aixm:Airspace gml:id="uuid.a8fe3aef-849f-4af9-877b-bccce48dc7c1">
+         <gml:identifier codeSpace="urn:uuid:">a8fe3aef-849f-4af9-877b-bccce48dc7c1</gml:identifier>
+         <gml:boundedBy xsi:nil="true"/>
+         <aixm:timeSlice>
+            <aixm:AirspaceTimeSlice gml:id="uuid.6f79572d-0027-4da9-9c09-21848e8e8779">
+               <gml:validTime xlink:type="simple">
+                  <gml:TimePeriod>
+                     <gml:beginPosition>2012-04-08T00:00:00Z</gml:beginPosition>
+                     <gml:endPosition indeterminatePosition="unknown"/>
+                  </gml:TimePeriod>
+               </gml:validTime>
+               <aixm:interpretation>BASELINE</aixm:interpretation>
+               <aixm:sequenceNumber>1</aixm:sequenceNumber>
+               <aixm:correctionNumber>0</aixm:correctionNumber>
+               <aixm:type>TRA</aixm:type>
+               <aixm:designator>LHTRA14C</aixm:designator>
+               <aixm:localType xsi:nil="true"/>
+               <aixm:name>MEZO CHARLIE</aixm:name>
+               <aixm:designatorICAO>yes</aixm:designatorICAO>
+               <aixm:controlType>CIVIL</aixm:controlType>
+               <aixm:upperLowerSeparation xsi:nil="true"/>
+               <aixm:protectedRoute xsi:nil="true"/>
+               <aixm:geometryComponent>
+                  <aixm:AirspaceGeometryComponent>
+                     <aixm:operation xsi:nil="true"/>
+                     <aixm:operationSequence xsi:nil="true"/>
+                     <aixm:theAirspaceVolume>
+                        <aixm:AirspaceVolume>
+                           <aixm:upperLimit uom="FT">4500.0</aixm:upperLimit>
+                           <aixm:upperLimitReference>MSL</aixm:upperLimitReference>
+                           <aixm:maximumLimit xsi:nil="true"/>
+                           <aixm:maximumLimitReference xsi:nil="true"/>
+                           <aixm:lowerLimit uom="FT">0.0</aixm:lowerLimit>
+                           <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
+                           <aixm:minimumLimit xsi:nil="true"/>
+                           <aixm:minimumLimitReference xsi:nil="true"/>
+                           <aixm:width xsi:nil="true"/>
+                           <aixm:horizontalProjection>
+                              <aixm:Surface srsName="urn:ogc:def:crs:EPSG:4326">
+                                 <gml:patches>
+                                    <gml:PolygonPatch interpolation="planar">
+                                       <gml:exterior>
+                                          <gml:Ring>
+                                             <gml:curveMember xlink:type="simple">
+                                                <gml:Curve>
+                                                   <gml:segments>
+                                                      <gml:GeodesicString interpolation="geodesic">
+                                                         <gml:posList>47.00222222222222 20.335555555555555 46.93694444444444 20.664166666666667 46.828611111111115 20.62777777777778 46.900277777777774 20.284166666666668 47.00222222222222 20.335555555555555</gml:posList>
+                                                      </gml:GeodesicString>
+                                                   </gml:segments>
+                                                </gml:Curve>
+                                             </gml:curveMember>
+                                          </gml:Ring>
+                                       </gml:exterior>
+                                    </gml:PolygonPatch>
+                                 </gml:patches>
+                                 <aixm:horizontalAccuracy xsi:nil="true"/>
+                              </aixm:Surface>
+                           </aixm:horizontalProjection>
+                           <aixm:centreline xsi:nil="true"/>
+                           <aixm:contributorAirspace xsi:nil="true"/>
+                        </aixm:AirspaceVolume>
+                     </aixm:theAirspaceVolume>
+                  </aixm:AirspaceGeometryComponent>
+               </aixm:geometryComponent>
+               <aixm:annotation>
+                  <aixm:Note>
+                     <aixm:propertyName xsi:nil="true"/>
+                     <aixm:purpose>REMARK</aixm:purpose>
+                     <aixm:translatedNote>
+                        <aixm:LinguisticNote>
+                           <aixm:note lang="eng"/>
+                        </aixm:LinguisticNote>
+                     </aixm:translatedNote>
+                  </aixm:Note>
+               </aixm:annotation>
+            </aixm:AirspaceTimeSlice>
+         </aixm:timeSlice>
+      </aixm:Airspace>
+   </message:hasMember>
+   <message:hasMember xlink:type="simple">
+      <aixm:Airspace gml:id="uuid.23069174-2768-4748-985e-99fb62199ea1">
+         <gml:identifier codeSpace="urn:uuid:">23069174-2768-4748-985e-99fb62199ea1</gml:identifier>
+         <gml:boundedBy xsi:nil="true"/>
+         <aixm:timeSlice>
+            <aixm:AirspaceTimeSlice gml:id="uuid.ef39dc27-8878-4c62-a7a1-9997f7676150">
+               <gml:validTime xlink:type="simple">
+                  <gml:TimePeriod>
+                     <gml:beginPosition>2012-04-08T00:00:00Z</gml:beginPosition>
+                     <gml:endPosition indeterminatePosition="unknown"/>
+                  </gml:TimePeriod>
+               </gml:validTime>
+               <aixm:interpretation>BASELINE</aixm:interpretation>
+               <aixm:sequenceNumber>1</aixm:sequenceNumber>
+               <aixm:correctionNumber>0</aixm:correctionNumber>
+               <aixm:type>TRA</aixm:type>
+               <aixm:designator>LHTRA15A</aixm:designator>
+               <aixm:localType xsi:nil="true"/>
+               <aixm:name>SZARVAS ALPHA</aixm:name>
+               <aixm:designatorICAO>yes</aixm:designatorICAO>
+               <aixm:controlType>CIVIL</aixm:controlType>
+               <aixm:upperLowerSeparation xsi:nil="true"/>
+               <aixm:protectedRoute xsi:nil="true"/>
+               <aixm:geometryComponent>
+                  <aixm:AirspaceGeometryComponent>
+                     <aixm:operation xsi:nil="true"/>
+                     <aixm:operationSequence xsi:nil="true"/>
+                     <aixm:theAirspaceVolume>
+                        <aixm:AirspaceVolume>
+                           <aixm:upperLimit uom="FT">9500.0</aixm:upperLimit>
+                           <aixm:upperLimitReference>MSL</aixm:upperLimitReference>
+                           <aixm:maximumLimit xsi:nil="true"/>
+                           <aixm:maximumLimitReference xsi:nil="true"/>
+                           <aixm:lowerLimit uom="FT">4500.0</aixm:lowerLimit>
+                           <aixm:lowerLimitReference>MSL</aixm:lowerLimitReference>
+                           <aixm:minimumLimit xsi:nil="true"/>
+                           <aixm:minimumLimitReference xsi:nil="true"/>
+                           <aixm:width xsi:nil="true"/>
+                           <aixm:horizontalProjection>
+                              <aixm:Surface srsName="urn:ogc:def:crs:EPSG:4326">
+                                 <gml:patches>
+                                    <gml:PolygonPatch interpolation="planar">
+                                       <gml:exterior>
+                                          <gml:Ring>
+                                             <gml:curveMember xlink:type="simple">
+                                                <gml:Curve>
+                                                   <gml:segments>
+                                                      <gml:GeodesicString interpolation="geodesic">
+                                                         <gml:posList>47.308055555555555 20.49138888888889 47.212500000000006 20.758055555555554 47.10277777777778 20.720555555555553 47.17916666666667 20.425555555555558 47.308055555555555 20.49138888888889</gml:posList>
+                                                      </gml:GeodesicString>
+                                                   </gml:segments>
+                                                </gml:Curve>
+                                             </gml:curveMember>
+                                          </gml:Ring>
+                                       </gml:exterior>
+                                    </gml:PolygonPatch>
+                                 </gml:patches>
+                                 <aixm:horizontalAccuracy xsi:nil="true"/>
+                              </aixm:Surface>
+                           </aixm:horizontalProjection>
+                           <aixm:centreline xsi:nil="true"/>
+                           <aixm:contributorAirspace xsi:nil="true"/>
+                        </aixm:AirspaceVolume>
+                     </aixm:theAirspaceVolume>
+                  </aixm:AirspaceGeometryComponent>
+               </aixm:geometryComponent>
+               <aixm:annotation>
+                  <aixm:Note>
+                     <aixm:propertyName xsi:nil="true"/>
+                     <aixm:purpose>REMARK</aixm:purpose>
+                     <aixm:translatedNote>
+                        <aixm:LinguisticNote>
+                           <aixm:note lang="eng"/>
+                        </aixm:LinguisticNote>
+                     </aixm:translatedNote>
+                  </aixm:Note>
+               </aixm:annotation>
+            </aixm:AirspaceTimeSlice>
+         </aixm:timeSlice>
+      </aixm:Airspace>
+   </message:hasMember>
+   <message:hasMember xlink:type="simple">
+      <aixm:Airspace gml:id="uuid.761f027d-6b21-4318-a405-51bdbb9d1701">
+         <gml:identifier codeSpace="urn:uuid:">761f027d-6b21-4318-a405-51bdbb9d1701</gml:identifier>
+         <gml:boundedBy xsi:nil="true"/>
+         <aixm:timeSlice>
+            <aixm:AirspaceTimeSlice gml:id="uuid.9bbd4a14-814b-4fb1-b3c5-81a6b543cff5">
+               <gml:validTime xlink:type="simple">
+                  <gml:TimePeriod>
+                     <gml:beginPosition>2012-04-08T00:00:00Z</gml:beginPosition>
+                     <gml:endPosition indeterminatePosition="unknown"/>
+                  </gml:TimePeriod>
+               </gml:validTime>
+               <aixm:interpretation>BASELINE</aixm:interpretation>
+               <aixm:sequenceNumber>1</aixm:sequenceNumber>
+               <aixm:correctionNumber>0</aixm:correctionNumber>
+               <aixm:type>TRA</aixm:type>
+               <aixm:designator>LHTRA15B</aixm:designator>
+               <aixm:localType xsi:nil="true"/>
+               <aixm:name>SZARVAS BRAVO</aixm:name>
+               <aixm:designatorICAO>yes</aixm:designatorICAO>
+               <aixm:controlType>CIVIL</aixm:controlType>
+               <aixm:upperLowerSeparation xsi:nil="true"/>
+               <aixm:protectedRoute xsi:nil="true"/>
+               <aixm:geometryComponent>
+                  <aixm:AirspaceGeometryComponent>
+                     <aixm:operation xsi:nil="true"/>
+                     <aixm:operationSequence xsi:nil="true"/>
+                     <aixm:theAirspaceVolume>
+                        <aixm:AirspaceVolume>
+                           <aixm:upperLimit uom="FT">9500.0</aixm:upperLimit>
+                           <aixm:upperLimitReference>MSL</aixm:upperLimitReference>
+                           <aixm:maximumLimit xsi:nil="true"/>
+                           <aixm:maximumLimitReference xsi:nil="true"/>
+                           <aixm:lowerLimit uom="FT">4500.0</aixm:lowerLimit>
+                           <aixm:lowerLimitReference>MSL</aixm:lowerLimitReference>
+                           <aixm:minimumLimit xsi:nil="true"/>
+                           <aixm:minimumLimitReference xsi:nil="true"/>
+                           <aixm:width xsi:nil="true"/>
+                           <aixm:horizontalProjection>
+                              <aixm:Surface srsName="urn:ogc:def:crs:EPSG:4326">
+                                 <gml:patches>
+                                    <gml:PolygonPatch interpolation="planar">
+                                       <gml:exterior>
+                                          <gml:Ring>
+                                             <gml:curveMember xlink:type="simple">
+                                                <gml:Curve>
+                                                   <gml:segments>
+                                                      <gml:GeodesicString interpolation="geodesic">
+                                                         <gml:posList>47.17916666666667 20.425555555555558 47.10277777777778 20.720555555555553 46.93694444444444 20.664166666666667 47.00222222222222 20.335555555555555 47.17916666666667 20.425555555555558</gml:posList>
+                                                      </gml:GeodesicString>
+                                                   </gml:segments>
+                                                </gml:Curve>
+                                             </gml:curveMember>
+                                          </gml:Ring>
+                                       </gml:exterior>
+                                    </gml:PolygonPatch>
+                                 </gml:patches>
+                                 <aixm:horizontalAccuracy xsi:nil="true"/>
+                              </aixm:Surface>
+                           </aixm:horizontalProjection>
+                           <aixm:centreline xsi:nil="true"/>
+                           <aixm:contributorAirspace xsi:nil="true"/>
+                        </aixm:AirspaceVolume>
+                     </aixm:theAirspaceVolume>
+                  </aixm:AirspaceGeometryComponent>
+               </aixm:geometryComponent>
+               <aixm:annotation>
+                  <aixm:Note>
+                     <aixm:propertyName xsi:nil="true"/>
+                     <aixm:purpose>REMARK</aixm:purpose>
+                     <aixm:translatedNote>
+                        <aixm:LinguisticNote>
+                           <aixm:note lang="eng"/>
+                        </aixm:LinguisticNote>
+                     </aixm:translatedNote>
+                  </aixm:Note>
+               </aixm:annotation>
+            </aixm:AirspaceTimeSlice>
+         </aixm:timeSlice>
+      </aixm:Airspace>
+   </message:hasMember>
+   <message:hasMember xlink:type="simple">
+      <aixm:Airspace gml:id="uuid.0b2ac64e-a502-478a-abcd-6d4604603aa5">
+         <gml:identifier codeSpace="urn:uuid:">0b2ac64e-a502-478a-abcd-6d4604603aa5</gml:identifier>
+         <gml:boundedBy xsi:nil="true"/>
+         <aixm:timeSlice>
+            <aixm:AirspaceTimeSlice gml:id="uuid.fb231ed4-6ca9-47c8-b18d-8849c7536ae9">
+               <gml:validTime xlink:type="simple">
+                  <gml:TimePeriod>
+                     <gml:beginPosition>2012-04-08T00:00:00Z</gml:beginPosition>
+                     <gml:endPosition indeterminatePosition="unknown"/>
+                  </gml:TimePeriod>
+               </gml:validTime>
+               <aixm:interpretation>BASELINE</aixm:interpretation>
+               <aixm:sequenceNumber>1</aixm:sequenceNumber>
+               <aixm:correctionNumber>0</aixm:correctionNumber>
+               <aixm:type>TRA</aixm:type>
+               <aixm:designator>LHTRA15C</aixm:designator>
+               <aixm:localType xsi:nil="true"/>
+               <aixm:name>SZARVAS CHARLIE</aixm:name>
+               <aixm:designatorICAO>yes</aixm:designatorICAO>
+               <aixm:controlType>CIVIL</aixm:controlType>
+               <aixm:upperLowerSeparation xsi:nil="true"/>
+               <aixm:protectedRoute xsi:nil="true"/>
+               <aixm:geometryComponent>
+                  <aixm:AirspaceGeometryComponent>
+                     <aixm:operation xsi:nil="true"/>
+                     <aixm:operationSequence xsi:nil="true"/>
+                     <aixm:theAirspaceVolume>
+                        <aixm:AirspaceVolume>
+                           <aixm:upperLimit uom="FT">9500.0</aixm:upperLimit>
+                           <aixm:upperLimitReference>MSL</aixm:upperLimitReference>
+                           <aixm:maximumLimit xsi:nil="true"/>
+                           <aixm:maximumLimitReference xsi:nil="true"/>
+                           <aixm:lowerLimit uom="FT">4500.0</aixm:lowerLimit>
+                           <aixm:lowerLimitReference>MSL</aixm:lowerLimitReference>
+                           <aixm:minimumLimit xsi:nil="true"/>
+                           <aixm:minimumLimitReference xsi:nil="true"/>
+                           <aixm:width xsi:nil="true"/>
+                           <aixm:horizontalProjection>
+                              <aixm:Surface srsName="urn:ogc:def:crs:EPSG:4326">
+                                 <gml:patches>
+                                    <gml:PolygonPatch interpolation="planar">
+                                       <gml:exterior>
+                                          <gml:Ring>
+                                             <gml:curveMember xlink:type="simple">
+                                                <gml:Curve>
+                                                   <gml:segments>
+                                                      <gml:GeodesicString interpolation="geodesic">
+                                                         <gml:posList>47.00222222222222 20.335555555555555 46.93694444444444 20.664166666666667 46.828611111111115 20.62777777777778 46.900277777777774 20.284166666666668 47.00222222222222 20.335555555555555</gml:posList>
+                                                      </gml:GeodesicString>
+                                                   </gml:segments>
+                                                </gml:Curve>
+                                             </gml:curveMember>
+                                          </gml:Ring>
+                                       </gml:exterior>
+                                    </gml:PolygonPatch>
+                                 </gml:patches>
+                                 <aixm:horizontalAccuracy xsi:nil="true"/>
+                              </aixm:Surface>
+                           </aixm:horizontalProjection>
+                           <aixm:centreline xsi:nil="true"/>
+                           <aixm:contributorAirspace xsi:nil="true"/>
+                        </aixm:AirspaceVolume>
+                     </aixm:theAirspaceVolume>
+                  </aixm:AirspaceGeometryComponent>
+               </aixm:geometryComponent>
+               <aixm:annotation>
+                  <aixm:Note>
+                     <aixm:propertyName xsi:nil="true"/>
+                     <aixm:purpose>REMARK</aixm:purpose>
+                     <aixm:translatedNote>
+                        <aixm:LinguisticNote>
+                           <aixm:note lang="eng"/>
+                        </aixm:LinguisticNote>
+                     </aixm:translatedNote>
+                  </aixm:Note>
+               </aixm:annotation>
+            </aixm:AirspaceTimeSlice>
+         </aixm:timeSlice>
+      </aixm:Airspace>
+   </message:hasMember>
+   <message:hasMember xlink:type="simple">
+      <aixm:Airspace gml:id="uuid.8b4e881b-7d4a-4b82-b535-0e352a8864b6">
+         <gml:identifier codeSpace="urn:uuid:">8b4e881b-7d4a-4b82-b535-0e352a8864b6</gml:identifier>
+         <gml:boundedBy xsi:nil="true"/>
+         <aixm:timeSlice>
+            <aixm:AirspaceTimeSlice gml:id="uuid.969020c9-3a06-4377-b4a2-c4b4f2b6ee03">
+               <gml:validTime xlink:type="simple">
+                  <gml:TimePeriod>
+                     <gml:beginPosition>2012-04-08T00:00:00Z</gml:beginPosition>
+                     <gml:endPosition indeterminatePosition="unknown"/>
+                  </gml:TimePeriod>
+               </gml:validTime>
+               <aixm:interpretation>BASELINE</aixm:interpretation>
+               <aixm:sequenceNumber>1</aixm:sequenceNumber>
+               <aixm:correctionNumber>0</aixm:correctionNumber>
+               <aixm:type>TRA</aixm:type>
+               <aixm:designator>LHTRA16</aixm:designator>
+               <aixm:localType xsi:nil="true"/>
+               <aixm:name>ARPAD</aixm:name>
+               <aixm:designatorICAO>yes</aixm:designatorICAO>
+               <aixm:controlType>CIVIL</aixm:controlType>
+               <aixm:upperLowerSeparation xsi:nil="true"/>
+               <aixm:protectedRoute xsi:nil="true"/>
+               <aixm:geometryComponent>
+                  <aixm:AirspaceGeometryComponent>
+                     <aixm:operation xsi:nil="true"/>
+                     <aixm:operationSequence xsi:nil="true"/>
+                     <aixm:theAirspaceVolume>
+                        <aixm:AirspaceVolume>
+                           <aixm:upperLimit uom="FL">115.0</aixm:upperLimit>
+                           <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+                           <aixm:maximumLimit xsi:nil="true"/>
+                           <aixm:maximumLimitReference xsi:nil="true"/>
+                           <aixm:lowerLimit uom="FT">0.0</aixm:lowerLimit>
+                           <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
+                           <aixm:minimumLimit xsi:nil="true"/>
+                           <aixm:minimumLimitReference xsi:nil="true"/>
+                           <aixm:width xsi:nil="true"/>
+                           <aixm:horizontalProjection>
+                              <aixm:Surface srsName="urn:ogc:def:crs:EPSG:4326">
+                                 <gml:patches>
+                                    <gml:PolygonPatch interpolation="planar">
+                                       <gml:exterior>
+                                          <gml:Ring>
+                                             <gml:curveMember xlink:type="simple">
+                                                <gml:Curve>
+                                                   <gml:segments>
+                                                      <gml:GeodesicString interpolation="geodesic">
+                                                         <gml:posList>46.828611111111115 20.62777777777778 46.75138888888889 20.899166666666666 46.49444444444445 20.732777777777777 46.534166666666664 20.393055555555556 46.828611111111115 20.62777777777778</gml:posList>
+                                                      </gml:GeodesicString>
+                                                   </gml:segments>
+                                                </gml:Curve>
+                                             </gml:curveMember>
+                                          </gml:Ring>
+                                       </gml:exterior>
+                                    </gml:PolygonPatch>
+                                 </gml:patches>
+                                 <aixm:horizontalAccuracy xsi:nil="true"/>
+                              </aixm:Surface>
+                           </aixm:horizontalProjection>
+                           <aixm:centreline xsi:nil="true"/>
+                           <aixm:contributorAirspace xsi:nil="true"/>
+                        </aixm:AirspaceVolume>
+                     </aixm:theAirspaceVolume>
+                  </aixm:AirspaceGeometryComponent>
+               </aixm:geometryComponent>
+               <aixm:annotation>
+                  <aixm:Note>
+                     <aixm:propertyName xsi:nil="true"/>
+                     <aixm:purpose>REMARK</aixm:purpose>
+                     <aixm:translatedNote>
+                        <aixm:LinguisticNote>
+                           <aixm:note lang="eng"/>
+                        </aixm:LinguisticNote>
+                     </aixm:translatedNote>
+                  </aixm:Note>
+               </aixm:annotation>
+            </aixm:AirspaceTimeSlice>
+         </aixm:timeSlice>
+      </aixm:Airspace>
+   </message:hasMember>
+   <message:hasMember xlink:type="simple">
+      <aixm:Airspace gml:id="uuid.b0478cdf-96b5-422f-b93c-1ecdf05ea012">
+         <gml:identifier codeSpace="urn:uuid:">b0478cdf-96b5-422f-b93c-1ecdf05ea012</gml:identifier>
+         <gml:boundedBy xsi:nil="true"/>
+         <aixm:timeSlice>
+            <aixm:AirspaceTimeSlice gml:id="uuid.cc5614ae-5aa5-4c82-bab6-92e62e0717e1">
+               <gml:validTime xlink:type="simple">
+                  <gml:TimePeriod>
+                     <gml:beginPosition>2012-04-08T00:00:00Z</gml:beginPosition>
+                     <gml:endPosition indeterminatePosition="unknown"/>
+                  </gml:TimePeriod>
+               </gml:validTime>
+               <aixm:interpretation>BASELINE</aixm:interpretation>
+               <aixm:sequenceNumber>1</aixm:sequenceNumber>
+               <aixm:correctionNumber>0</aixm:correctionNumber>
+               <aixm:type>TRA</aixm:type>
+               <aixm:designator>LHTRA21A</aixm:designator>
+               <aixm:localType xsi:nil="true"/>
+               <aixm:name>WEST ALPHA</aixm:name>
+               <aixm:designatorICAO>yes</aixm:designatorICAO>
+               <aixm:controlType>CIVIL</aixm:controlType>
+               <aixm:upperLowerSeparation xsi:nil="true"/>
+               <aixm:protectedRoute xsi:nil="true"/>
+               <aixm:geometryComponent>
+                  <aixm:AirspaceGeometryComponent>
+                     <aixm:operation xsi:nil="true"/>
+                     <aixm:operationSequence xsi:nil="true"/>
+                     <aixm:theAirspaceVolume>
+                        <aixm:AirspaceVolume>
+                           <aixm:upperLimit uom="FL">245.0</aixm:upperLimit>
+                           <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+                           <aixm:maximumLimit xsi:nil="true"/>
+                           <aixm:maximumLimitReference xsi:nil="true"/>
+                           <aixm:lowerLimit uom="FT">9500.0</aixm:lowerLimit>
+                           <aixm:lowerLimitReference>MSL</aixm:lowerLimitReference>
+                           <aixm:minimumLimit xsi:nil="true"/>
+                           <aixm:minimumLimitReference xsi:nil="true"/>
+                           <aixm:width xsi:nil="true"/>
+                           <aixm:horizontalProjection>
+                              <aixm:Surface srsName="urn:ogc:def:crs:EPSG:4326">
+                                 <gml:patches>
+                                    <gml:PolygonPatch interpolation="planar">
+                                       <gml:exterior>
+                                          <gml:Ring>
+                                             <gml:curveMember xlink:type="simple">
+                                                <gml:Curve>
+                                                   <gml:segments>
+                                                      <gml:GeodesicString interpolation="geodesic">
+                                                         <gml:posList>46.85138888888889 16.357222222222223 46.56444444444444 18.001666666666665 46.14833333333333 18.07361111111111 46.07916666666667 17.445833333333333 46.382222222222225 17.020555555555553 46.49166666666667 16.61722222222222 46.683611111111105 16.422777777777778 46.85138888888889 16.357222222222223</gml:posList>
+                                                      </gml:GeodesicString>
+                                                   </gml:segments>
+                                                </gml:Curve>
+                                             </gml:curveMember>
+                                          </gml:Ring>
+                                       </gml:exterior>
+                                    </gml:PolygonPatch>
+                                 </gml:patches>
+                                 <aixm:horizontalAccuracy xsi:nil="true"/>
+                              </aixm:Surface>
+                           </aixm:horizontalProjection>
+                           <aixm:centreline xsi:nil="true"/>
+                           <aixm:contributorAirspace xsi:nil="true"/>
+                        </aixm:AirspaceVolume>
+                     </aixm:theAirspaceVolume>
+                  </aixm:AirspaceGeometryComponent>
+               </aixm:geometryComponent>
+               <aixm:annotation>
+                  <aixm:Note>
+                     <aixm:propertyName xsi:nil="true"/>
+                     <aixm:purpose>REMARK</aixm:purpose>
+                     <aixm:translatedNote>
+                        <aixm:LinguisticNote>
+                           <aixm:note lang="eng"/>
+                        </aixm:LinguisticNote>
+                     </aixm:translatedNote>
+                  </aixm:Note>
+               </aixm:annotation>
+            </aixm:AirspaceTimeSlice>
+         </aixm:timeSlice>
+      </aixm:Airspace>
+   </message:hasMember>
+   <message:hasMember xlink:type="simple">
+      <aixm:Airspace gml:id="uuid.8f0611e4-4c1b-408b-8226-f9978c2322fc">
+         <gml:identifier codeSpace="urn:uuid:">8f0611e4-4c1b-408b-8226-f9978c2322fc</gml:identifier>
+         <gml:boundedBy xsi:nil="true"/>
+         <aixm:timeSlice>
+            <aixm:AirspaceTimeSlice gml:id="uuid.88b04802-5287-4a6e-b43a-7edd0893d676">
+               <gml:validTime xlink:type="simple">
+                  <gml:TimePeriod>
+                     <gml:beginPosition>2012-04-08T00:00:00Z</gml:beginPosition>
+                     <gml:endPosition indeterminatePosition="unknown"/>
+                  </gml:TimePeriod>
+               </gml:validTime>
+               <aixm:interpretation>BASELINE</aixm:interpretation>
+               <aixm:sequenceNumber>1</aixm:sequenceNumber>
+               <aixm:correctionNumber>0</aixm:correctionNumber>
+               <aixm:type>TRA</aixm:type>
+               <aixm:designator>LHTRA21B</aixm:designator>
+               <aixm:localType xsi:nil="true"/>
+               <aixm:name>WEST BRAVO</aixm:name>
+               <aixm:designatorICAO>yes</aixm:designatorICAO>
+               <aixm:controlType>CIVIL</aixm:controlType>
+               <aixm:upperLowerSeparation xsi:nil="true"/>
+               <aixm:protectedRoute xsi:nil="true"/>
+               <aixm:geometryComponent>
+                  <aixm:AirspaceGeometryComponent>
+                     <aixm:operation xsi:nil="true"/>
+                     <aixm:operationSequence xsi:nil="true"/>
+                     <aixm:theAirspaceVolume>
+                        <aixm:AirspaceVolume>
+                           <aixm:upperLimit uom="FL">215.0</aixm:upperLimit>
+                           <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+                           <aixm:maximumLimit xsi:nil="true"/>
+                           <aixm:maximumLimitReference xsi:nil="true"/>
+                           <aixm:lowerLimit uom="FL">135.0</aixm:lowerLimit>
+                           <aixm:lowerLimitReference>STD</aixm:lowerLimitReference>
+                           <aixm:minimumLimit xsi:nil="true"/>
+                           <aixm:minimumLimitReference xsi:nil="true"/>
+                           <aixm:width xsi:nil="true"/>
+                           <aixm:horizontalProjection>
+                              <aixm:Surface srsName="urn:ogc:def:crs:EPSG:4326">
+                                 <gml:patches>
+                                    <gml:PolygonPatch interpolation="planar">
+                                       <gml:exterior>
+                                          <gml:Ring>
+                                             <gml:curveMember xlink:type="simple">
+                                                <gml:Curve>
+                                                   <gml:segments>
+                                                      <gml:GeodesicString interpolation="geodesic">
+                                                         <gml:posList>46.85138888888889 16.357222222222223 46.75055555555556 17.969166666666666 46.56444444444444 18.001666666666665 46.85138888888889 16.357222222222223</gml:posList>
+                                                      </gml:GeodesicString>
+                                                   </gml:segments>
+                                                </gml:Curve>
+                                             </gml:curveMember>
+                                          </gml:Ring>
+                                       </gml:exterior>
+                                    </gml:PolygonPatch>
+                                 </gml:patches>
+                                 <aixm:horizontalAccuracy xsi:nil="true"/>
+                              </aixm:Surface>
+                           </aixm:horizontalProjection>
+                           <aixm:centreline xsi:nil="true"/>
+                           <aixm:contributorAirspace xsi:nil="true"/>
+                        </aixm:AirspaceVolume>
+                     </aixm:theAirspaceVolume>
+                  </aixm:AirspaceGeometryComponent>
+               </aixm:geometryComponent>
+               <aixm:annotation>
+                  <aixm:Note>
+                     <aixm:propertyName xsi:nil="true"/>
+                     <aixm:purpose>REMARK</aixm:purpose>
+                     <aixm:translatedNote>
+                        <aixm:LinguisticNote>
+                           <aixm:note lang="eng"/>
+                        </aixm:LinguisticNote>
+                     </aixm:translatedNote>
+                  </aixm:Note>
+               </aixm:annotation>
+            </aixm:AirspaceTimeSlice>
+         </aixm:timeSlice>
+      </aixm:Airspace>
+   </message:hasMember>
+   <message:hasMember xlink:type="simple">
+      <aixm:Airspace gml:id="uuid.5d7251c4-3196-4448-9d8b-feda71c529fc">
+         <gml:identifier codeSpace="urn:uuid:">5d7251c4-3196-4448-9d8b-feda71c529fc</gml:identifier>
+         <gml:boundedBy xsi:nil="true"/>
+         <aixm:timeSlice>
+            <aixm:AirspaceTimeSlice gml:id="uuid.75b50cf7-4fb3-4c38-8f9e-d4b10f9f3507">
+               <gml:validTime xlink:type="simple">
+                  <gml:TimePeriod>
+                     <gml:beginPosition>2012-04-08T00:00:00Z</gml:beginPosition>
+                     <gml:endPosition indeterminatePosition="unknown"/>
+                  </gml:TimePeriod>
+               </gml:validTime>
+               <aixm:interpretation>BASELINE</aixm:interpretation>
+               <aixm:sequenceNumber>1</aixm:sequenceNumber>
+               <aixm:correctionNumber>0</aixm:correctionNumber>
+               <aixm:type>TRA</aixm:type>
+               <aixm:designator>LHTRA21C</aixm:designator>
+               <aixm:localType xsi:nil="true"/>
+               <aixm:name>WEST CHARLIE</aixm:name>
+               <aixm:designatorICAO>yes</aixm:designatorICAO>
+               <aixm:controlType>CIVIL</aixm:controlType>
+               <aixm:upperLowerSeparation xsi:nil="true"/>
+               <aixm:protectedRoute xsi:nil="true"/>
+               <aixm:geometryComponent>
+                  <aixm:AirspaceGeometryComponent>
+                     <aixm:operation xsi:nil="true"/>
+                     <aixm:operationSequence xsi:nil="true"/>
+                     <aixm:theAirspaceVolume>
+                        <aixm:AirspaceVolume>
+                           <aixm:upperLimit uom="FL">175.0</aixm:upperLimit>
+                           <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+                           <aixm:maximumLimit xsi:nil="true"/>
+                           <aixm:maximumLimitReference xsi:nil="true"/>
+                           <aixm:lowerLimit uom="FL">135.0</aixm:lowerLimit>
+                           <aixm:lowerLimitReference>STD</aixm:lowerLimitReference>
+                           <aixm:minimumLimit xsi:nil="true"/>
+                           <aixm:minimumLimitReference xsi:nil="true"/>
+                           <aixm:width xsi:nil="true"/>
+                           <aixm:horizontalProjection>
+                              <aixm:Surface srsName="urn:ogc:def:crs:EPSG:4326">
+                                 <gml:patches>
+                                    <gml:PolygonPatch interpolation="planar">
+                                       <gml:exterior>
+                                          <gml:Ring>
+                                             <gml:curveMember xlink:type="simple">
+                                                <gml:Curve>
+                                                   <gml:segments>
+                                                      <gml:GeodesicString interpolation="geodesic">
+                                                         <gml:posList>46.75055555555556 17.969166666666666 46.62388888888889 18.226388888888888 45.96027777777778 18.3975 45.92472222222222 17.881666666666668 46.07916666666667 17.445833333333333 46.14833333333333 18.07361111111111 46.75055555555556 17.969166666666666</gml:posList>
+                                                      </gml:GeodesicString>
+                                                   </gml:segments>
+                                                </gml:Curve>
+                                             </gml:curveMember>
+                                          </gml:Ring>
+                                       </gml:exterior>
+                                    </gml:PolygonPatch>
+                                 </gml:patches>
+                                 <aixm:horizontalAccuracy xsi:nil="true"/>
+                              </aixm:Surface>
+                           </aixm:horizontalProjection>
+                           <aixm:centreline xsi:nil="true"/>
+                           <aixm:contributorAirspace xsi:nil="true"/>
+                        </aixm:AirspaceVolume>
+                     </aixm:theAirspaceVolume>
+                  </aixm:AirspaceGeometryComponent>
+               </aixm:geometryComponent>
+               <aixm:annotation>
+                  <aixm:Note>
+                     <aixm:propertyName xsi:nil="true"/>
+                     <aixm:purpose>REMARK</aixm:purpose>
+                     <aixm:translatedNote>
+                        <aixm:LinguisticNote>
+                           <aixm:note lang="eng"/>
+                        </aixm:LinguisticNote>
+                     </aixm:translatedNote>
+                  </aixm:Note>
+               </aixm:annotation>
+            </aixm:AirspaceTimeSlice>
+         </aixm:timeSlice>
+      </aixm:Airspace>
+   </message:hasMember>
+   <message:hasMember xlink:type="simple">
+      <aixm:Airspace gml:id="uuid.1cb7ca33-6f82-4148-b958-3bd03428c7e5">
+         <gml:identifier codeSpace="urn:uuid:">1cb7ca33-6f82-4148-b958-3bd03428c7e5</gml:identifier>
+         <gml:boundedBy xsi:nil="true"/>
+         <aixm:timeSlice>
+            <aixm:AirspaceTimeSlice gml:id="uuid.a1a2baa3-e7ec-4893-95e4-67c93a3785ed">
+               <gml:validTime xlink:type="simple">
+                  <gml:TimePeriod>
+                     <gml:beginPosition>2012-04-08T00:00:00Z</gml:beginPosition>
+                     <gml:endPosition indeterminatePosition="unknown"/>
+                  </gml:TimePeriod>
+               </gml:validTime>
+               <aixm:interpretation>BASELINE</aixm:interpretation>
+               <aixm:sequenceNumber>1</aixm:sequenceNumber>
+               <aixm:correctionNumber>0</aixm:correctionNumber>
+               <aixm:type>TRA</aixm:type>
+               <aixm:designator>LHTRA21D</aixm:designator>
+               <aixm:localType xsi:nil="true"/>
+               <aixm:name>WEST DELTA</aixm:name>
+               <aixm:designatorICAO>yes</aixm:designatorICAO>
+               <aixm:controlType>CIVIL</aixm:controlType>
+               <aixm:upperLowerSeparation xsi:nil="true"/>
+               <aixm:protectedRoute xsi:nil="true"/>
+               <aixm:geometryComponent>
+                  <aixm:AirspaceGeometryComponent>
+                     <aixm:operation xsi:nil="true"/>
+                     <aixm:operationSequence xsi:nil="true"/>
+                     <aixm:theAirspaceVolume>
+                        <aixm:AirspaceVolume>
+                           <aixm:upperLimit uom="FT">9500.0</aixm:upperLimit>
+                           <aixm:upperLimitReference>MSL</aixm:upperLimitReference>
+                           <aixm:maximumLimit xsi:nil="true"/>
+                           <aixm:maximumLimitReference xsi:nil="true"/>
+                           <aixm:lowerLimit uom="FT">4000.0</aixm:lowerLimit>
+                           <aixm:lowerLimitReference>MSL</aixm:lowerLimitReference>
+                           <aixm:minimumLimit xsi:nil="true"/>
+                           <aixm:minimumLimitReference xsi:nil="true"/>
+                           <aixm:width xsi:nil="true"/>
+                           <aixm:horizontalProjection>
+                              <aixm:Surface srsName="urn:ogc:def:crs:EPSG:4326">
+                                 <gml:patches>
+                                    <gml:PolygonPatch interpolation="planar">
+                                       <gml:exterior>
+                                          <gml:Ring>
+                                             <gml:curveMember xlink:type="simple">
+                                                <gml:Curve>
+                                                   <gml:segments>
+                                                      <gml:GeodesicString interpolation="geodesic">
+                                                         <gml:posList>46.44944444444444 17.42361111111111 46.24638888888889 17.978055555555553 45.92472222222222 17.881666666666668 46.07916666666667 17.445833333333333 46.382222222222225 17.020555555555553 46.44944444444444 17.42361111111111</gml:posList>
+                                                      </gml:GeodesicString>
+                                                   </gml:segments>
+                                                </gml:Curve>
+                                             </gml:curveMember>
+                                          </gml:Ring>
+                                       </gml:exterior>
+                                    </gml:PolygonPatch>
+                                 </gml:patches>
+                                 <aixm:horizontalAccuracy xsi:nil="true"/>
+                              </aixm:Surface>
+                           </aixm:horizontalProjection>
+                           <aixm:centreline xsi:nil="true"/>
+                           <aixm:contributorAirspace xsi:nil="true"/>
+                        </aixm:AirspaceVolume>
+                     </aixm:theAirspaceVolume>
+                  </aixm:AirspaceGeometryComponent>
+               </aixm:geometryComponent>
+               <aixm:annotation>
+                  <aixm:Note>
+                     <aixm:propertyName xsi:nil="true"/>
+                     <aixm:purpose>REMARK</aixm:purpose>
+                     <aixm:translatedNote>
+                        <aixm:LinguisticNote>
+                           <aixm:note lang="eng"/>
+                        </aixm:LinguisticNote>
+                     </aixm:translatedNote>
+                  </aixm:Note>
+               </aixm:annotation>
+            </aixm:AirspaceTimeSlice>
+         </aixm:timeSlice>
+      </aixm:Airspace>
+   </message:hasMember>
+   <message:hasMember xlink:type="simple">
+      <aixm:Airspace gml:id="uuid.15f2c86c-243e-4e22-bdab-de154c43667e">
+         <gml:identifier codeSpace="urn:uuid:">15f2c86c-243e-4e22-bdab-de154c43667e</gml:identifier>
+         <gml:boundedBy xsi:nil="true"/>
+         <aixm:timeSlice>
+            <aixm:AirspaceTimeSlice gml:id="uuid.aa2ce1c9-c4d9-4f76-b41a-3ec95949545f">
+               <gml:validTime xlink:type="simple">
+                  <gml:TimePeriod>
+                     <gml:beginPosition>2012-04-08T00:00:00Z</gml:beginPosition>
+                     <gml:endPosition indeterminatePosition="unknown"/>
+                  </gml:TimePeriod>
+               </gml:validTime>
+               <aixm:interpretation>BASELINE</aixm:interpretation>
+               <aixm:sequenceNumber>1</aixm:sequenceNumber>
+               <aixm:correctionNumber>0</aixm:correctionNumber>
+               <aixm:type>TRA</aixm:type>
+               <aixm:designator>LHTRA21E</aixm:designator>
+               <aixm:localType xsi:nil="true"/>
+               <aixm:name>WEST ECHO</aixm:name>
+               <aixm:designatorICAO>yes</aixm:designatorICAO>
+               <aixm:controlType>CIVIL</aixm:controlType>
+               <aixm:upperLowerSeparation xsi:nil="true"/>
+               <aixm:protectedRoute xsi:nil="true"/>
+               <aixm:geometryComponent>
+                  <aixm:AirspaceGeometryComponent>
+                     <aixm:operation xsi:nil="true"/>
+                     <aixm:operationSequence xsi:nil="true"/>
+                     <aixm:theAirspaceVolume>
+                        <aixm:AirspaceVolume>
+                           <aixm:upperLimit uom="FT">4000.0</aixm:upperLimit>
+                           <aixm:upperLimitReference>MSL</aixm:upperLimitReference>
+                           <aixm:maximumLimit xsi:nil="true"/>
+                           <aixm:maximumLimitReference xsi:nil="true"/>
+                           <aixm:lowerLimit uom="FT">0.0</aixm:lowerLimit>
+                           <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
+                           <aixm:minimumLimit xsi:nil="true"/>
+                           <aixm:minimumLimitReference xsi:nil="true"/>
+                           <aixm:width xsi:nil="true"/>
+                           <aixm:horizontalProjection>
+                              <aixm:Surface srsName="urn:ogc:def:crs:EPSG:4326">
+                                 <gml:patches>
+                                    <gml:PolygonPatch interpolation="planar">
+                                       <gml:exterior>
+                                          <gml:Ring>
+                                             <gml:curveMember xlink:type="simple">
+                                                <gml:Curve>
+                                                   <gml:segments>
+                                                      <gml:GeodesicString interpolation="geodesic">
+                                                         <gml:posList>46.44944444444444 17.42361111111111 46.24638888888889 17.978055555555553 45.92472222222222 17.881666666666668 46.07916666666667 17.445833333333333 46.382222222222225 17.020555555555553 46.44944444444444 17.42361111111111</gml:posList>
+                                                      </gml:GeodesicString>
+                                                   </gml:segments>
+                                                </gml:Curve>
+                                             </gml:curveMember>
+                                          </gml:Ring>
+                                       </gml:exterior>
+                                    </gml:PolygonPatch>
+                                 </gml:patches>
+                                 <aixm:horizontalAccuracy xsi:nil="true"/>
+                              </aixm:Surface>
+                           </aixm:horizontalProjection>
+                           <aixm:centreline xsi:nil="true"/>
+                           <aixm:contributorAirspace xsi:nil="true"/>
+                        </aixm:AirspaceVolume>
+                     </aixm:theAirspaceVolume>
+                  </aixm:AirspaceGeometryComponent>
+               </aixm:geometryComponent>
+               <aixm:annotation>
+                  <aixm:Note>
+                     <aixm:propertyName xsi:nil="true"/>
+                     <aixm:purpose>REMARK</aixm:purpose>
+                     <aixm:translatedNote>
+                        <aixm:LinguisticNote>
+                           <aixm:note lang="eng"/>
+                        </aixm:LinguisticNote>
+                     </aixm:translatedNote>
+                  </aixm:Note>
+               </aixm:annotation>
+            </aixm:AirspaceTimeSlice>
+         </aixm:timeSlice>
+      </aixm:Airspace>
+   </message:hasMember>
+   <message:hasMember xlink:type="simple">
+      <aixm:Airspace gml:id="uuid.3ab22edb-e9a7-417a-be51-3282b68da02c">
+         <gml:identifier codeSpace="urn:uuid:">3ab22edb-e9a7-417a-be51-3282b68da02c</gml:identifier>
+         <gml:boundedBy xsi:nil="true"/>
+         <aixm:timeSlice>
+            <aixm:AirspaceTimeSlice gml:id="uuid.1e7764e8-e34f-4333-a206-943b32875f7b">
+               <gml:validTime xlink:type="simple">
+                  <gml:TimePeriod>
+                     <gml:beginPosition>2012-04-08T00:00:00Z</gml:beginPosition>
+                     <gml:endPosition indeterminatePosition="unknown"/>
+                  </gml:TimePeriod>
+               </gml:validTime>
+               <aixm:interpretation>BASELINE</aixm:interpretation>
+               <aixm:sequenceNumber>1</aixm:sequenceNumber>
+               <aixm:correctionNumber>0</aixm:correctionNumber>
+               <aixm:type>TRA</aixm:type>
+               <aixm:designator>LHTRA22A</aixm:designator>
+               <aixm:localType xsi:nil="true"/>
+               <aixm:name>SOUTH ALPHA</aixm:name>
+               <aixm:designatorICAO>yes</aixm:designatorICAO>
+               <aixm:controlType>CIVIL</aixm:controlType>
+               <aixm:upperLowerSeparation xsi:nil="true"/>
+               <aixm:protectedRoute xsi:nil="true"/>
+               <aixm:geometryComponent>
+                  <aixm:AirspaceGeometryComponent>
+                     <aixm:operation xsi:nil="true"/>
+                     <aixm:operationSequence xsi:nil="true"/>
+                     <aixm:theAirspaceVolume>
+                        <aixm:AirspaceVolume>
+                           <aixm:upperLimit uom="FL">175.0</aixm:upperLimit>
+                           <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+                           <aixm:maximumLimit xsi:nil="true"/>
+                           <aixm:maximumLimitReference xsi:nil="true"/>
+                           <aixm:lowerLimit uom="FL">125.0</aixm:lowerLimit>
+                           <aixm:lowerLimitReference>STD</aixm:lowerLimitReference>
+                           <aixm:minimumLimit xsi:nil="true"/>
+                           <aixm:minimumLimitReference xsi:nil="true"/>
+                           <aixm:width xsi:nil="true"/>
+                           <aixm:horizontalProjection>
+                              <aixm:Surface srsName="urn:ogc:def:crs:EPSG:4326">
+                                 <gml:patches>
+                                    <gml:PolygonPatch interpolation="planar">
+                                       <gml:exterior>
+                                          <gml:Ring>
+                                             <gml:curveMember xlink:type="simple">
+                                                <gml:Curve>
+                                                   <gml:segments>
+                                                      <gml:GeodesicString interpolation="geodesic">
+                                                         <gml:posList>47.06166666666666 19.396944444444443 47.04472222222222 20.074444444444445 46.933055555555555 20.12472222222222 46.828611111111115 20.62777777777778 46.534166666666664 20.393055555555556 46.62444444444444 19.78805555555556 47.06166666666666 19.396944444444443</gml:posList>
+                                                      </gml:GeodesicString>
+                                                   </gml:segments>
+                                                </gml:Curve>
+                                             </gml:curveMember>
+                                          </gml:Ring>
+                                       </gml:exterior>
+                                    </gml:PolygonPatch>
+                                 </gml:patches>
+                                 <aixm:horizontalAccuracy xsi:nil="true"/>
+                              </aixm:Surface>
+                           </aixm:horizontalProjection>
+                           <aixm:centreline xsi:nil="true"/>
+                           <aixm:contributorAirspace xsi:nil="true"/>
+                        </aixm:AirspaceVolume>
+                     </aixm:theAirspaceVolume>
+                  </aixm:AirspaceGeometryComponent>
+               </aixm:geometryComponent>
+               <aixm:annotation>
+                  <aixm:Note>
+                     <aixm:propertyName xsi:nil="true"/>
+                     <aixm:purpose>REMARK</aixm:purpose>
+                     <aixm:translatedNote>
+                        <aixm:LinguisticNote>
+                           <aixm:note lang="eng"/>
+                        </aixm:LinguisticNote>
+                     </aixm:translatedNote>
+                  </aixm:Note>
+               </aixm:annotation>
+            </aixm:AirspaceTimeSlice>
+         </aixm:timeSlice>
+      </aixm:Airspace>
+   </message:hasMember>
+   <message:hasMember xlink:type="simple">
+      <aixm:Airspace gml:id="uuid.0719298a-8564-4642-93d6-e443aa081eb2">
+         <gml:identifier codeSpace="urn:uuid:">0719298a-8564-4642-93d6-e443aa081eb2</gml:identifier>
+         <gml:boundedBy xsi:nil="true"/>
+         <aixm:timeSlice>
+            <aixm:AirspaceTimeSlice gml:id="uuid.ef43b3fb-74de-4522-971f-11dfd251379d">
+               <gml:validTime xlink:type="simple">
+                  <gml:TimePeriod>
+                     <gml:beginPosition>2012-04-08T00:00:00Z</gml:beginPosition>
+                     <gml:endPosition indeterminatePosition="unknown"/>
+                  </gml:TimePeriod>
+               </gml:validTime>
+               <aixm:interpretation>BASELINE</aixm:interpretation>
+               <aixm:sequenceNumber>1</aixm:sequenceNumber>
+               <aixm:correctionNumber>0</aixm:correctionNumber>
+               <aixm:type>TRA</aixm:type>
+               <aixm:designator>LHTRA22B</aixm:designator>
+               <aixm:localType xsi:nil="true"/>
+               <aixm:name>SOUTH BRAVO</aixm:name>
+               <aixm:designatorICAO>yes</aixm:designatorICAO>
+               <aixm:controlType>CIVIL</aixm:controlType>
+               <aixm:upperLowerSeparation xsi:nil="true"/>
+               <aixm:protectedRoute xsi:nil="true"/>
+               <aixm:geometryComponent>
+                  <aixm:AirspaceGeometryComponent>
+                     <aixm:operation xsi:nil="true"/>
+                     <aixm:operationSequence xsi:nil="true"/>
+                     <aixm:theAirspaceVolume>
+                        <aixm:AirspaceVolume>
+                           <aixm:upperLimit uom="FL">175.0</aixm:upperLimit>
+                           <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+                           <aixm:maximumLimit xsi:nil="true"/>
+                           <aixm:maximumLimitReference xsi:nil="true"/>
+                           <aixm:lowerLimit uom="FT">9500.0</aixm:lowerLimit>
+                           <aixm:lowerLimitReference>MSL</aixm:lowerLimitReference>
+                           <aixm:minimumLimit xsi:nil="true"/>
+                           <aixm:minimumLimitReference xsi:nil="true"/>
+                           <aixm:width xsi:nil="true"/>
+                           <aixm:horizontalProjection>
+                              <aixm:Surface srsName="urn:ogc:def:crs:EPSG:4326">
+                                 <gml:patches>
+                                    <gml:PolygonPatch interpolation="planar">
+                                       <gml:exterior>
+                                          <gml:Ring>
+                                             <gml:curveMember xlink:type="simple">
+                                                <gml:Curve>
+                                                   <gml:segments>
+                                                      <gml:GeodesicString interpolation="geodesic">
+                                                         <gml:posList>46.828611111111115 20.62777777777778 46.661944444444444 21.209444444444443 46.38861111111111 21.094444444444445 46.361111111111114 20.921944444444446 46.446666666666665 19.94472222222222 46.62444444444444 19.78805555555556 46.534166666666664 20.393055555555556 46.828611111111115 20.62777777777778</gml:posList>
+                                                      </gml:GeodesicString>
+                                                   </gml:segments>
+                                                </gml:Curve>
+                                             </gml:curveMember>
+                                          </gml:Ring>
+                                       </gml:exterior>
+                                    </gml:PolygonPatch>
+                                 </gml:patches>
+                                 <aixm:horizontalAccuracy xsi:nil="true"/>
+                              </aixm:Surface>
+                           </aixm:horizontalProjection>
+                           <aixm:centreline xsi:nil="true"/>
+                           <aixm:contributorAirspace xsi:nil="true"/>
+                        </aixm:AirspaceVolume>
+                     </aixm:theAirspaceVolume>
+                  </aixm:AirspaceGeometryComponent>
+               </aixm:geometryComponent>
+               <aixm:annotation>
+                  <aixm:Note>
+                     <aixm:propertyName xsi:nil="true"/>
+                     <aixm:purpose>REMARK</aixm:purpose>
+                     <aixm:translatedNote>
+                        <aixm:LinguisticNote>
+                           <aixm:note lang="eng"/>
+                        </aixm:LinguisticNote>
+                     </aixm:translatedNote>
+                  </aixm:Note>
+               </aixm:annotation>
+            </aixm:AirspaceTimeSlice>
+         </aixm:timeSlice>
+      </aixm:Airspace>
+   </message:hasMember>
+   <message:hasMember xlink:type="simple">
+      <aixm:Airspace gml:id="uuid.241b6c56-0a39-43f8-9320-67433c73bf2a">
+         <gml:identifier codeSpace="urn:uuid:">241b6c56-0a39-43f8-9320-67433c73bf2a</gml:identifier>
+         <gml:boundedBy xsi:nil="true"/>
+         <aixm:timeSlice>
+            <aixm:AirspaceTimeSlice gml:id="uuid.2174cb55-5170-47f9-94ed-169282826d9b">
+               <gml:validTime xlink:type="simple">
+                  <gml:TimePeriod>
+                     <gml:beginPosition>2012-04-08T00:00:00Z</gml:beginPosition>
+                     <gml:endPosition indeterminatePosition="unknown"/>
+                  </gml:TimePeriod>
+               </gml:validTime>
+               <aixm:interpretation>BASELINE</aixm:interpretation>
+               <aixm:sequenceNumber>1</aixm:sequenceNumber>
+               <aixm:correctionNumber>0</aixm:correctionNumber>
+               <aixm:type>TRA</aixm:type>
+               <aixm:designator>LHTRA22C</aixm:designator>
+               <aixm:localType xsi:nil="true"/>
+               <aixm:name>SOUTH CHARLIE</aixm:name>
+               <aixm:designatorICAO>yes</aixm:designatorICAO>
+               <aixm:controlType>CIVIL</aixm:controlType>
+               <aixm:upperLowerSeparation xsi:nil="true"/>
+               <aixm:protectedRoute xsi:nil="true"/>
+               <aixm:geometryComponent>
+                  <aixm:AirspaceGeometryComponent>
+                     <aixm:operation xsi:nil="true"/>
+                     <aixm:operationSequence xsi:nil="true"/>
+                     <aixm:theAirspaceVolume>
+                        <aixm:AirspaceVolume>
+                           <aixm:upperLimit uom="FL">245.0</aixm:upperLimit>
+                           <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+                           <aixm:maximumLimit xsi:nil="true"/>
+                           <aixm:maximumLimitReference xsi:nil="true"/>
+                           <aixm:lowerLimit uom="FL">175.0</aixm:lowerLimit>
+                           <aixm:lowerLimitReference>STD</aixm:lowerLimitReference>
+                           <aixm:minimumLimit xsi:nil="true"/>
+                           <aixm:minimumLimitReference xsi:nil="true"/>
+                           <aixm:width xsi:nil="true"/>
+                           <aixm:horizontalProjection>
+                              <aixm:Surface srsName="urn:ogc:def:crs:EPSG:4326">
+                                 <gml:patches>
+                                    <gml:PolygonPatch interpolation="planar">
+                                       <gml:exterior>
+                                          <gml:Ring>
+                                             <gml:curveMember xlink:type="simple">
+                                                <gml:Curve>
+                                                   <gml:segments>
+                                                      <gml:GeodesicString interpolation="geodesic">
+                                                         <gml:posList>47.06166666666666 19.396944444444443 47.04472222222222 20.074444444444445 46.933055555555555 20.12472222222222 46.828611111111115 20.62777777777778 46.661944444444444 21.209444444444443 46.38861111111111 21.094444444444445 46.361111111111114 20.921944444444446 46.446666666666665 19.94472222222222 47.06166666666666 19.396944444444443</gml:posList>
+                                                      </gml:GeodesicString>
+                                                   </gml:segments>
+                                                </gml:Curve>
+                                             </gml:curveMember>
+                                          </gml:Ring>
+                                       </gml:exterior>
+                                    </gml:PolygonPatch>
+                                 </gml:patches>
+                                 <aixm:horizontalAccuracy xsi:nil="true"/>
+                              </aixm:Surface>
+                           </aixm:horizontalProjection>
+                           <aixm:centreline xsi:nil="true"/>
+                           <aixm:contributorAirspace xsi:nil="true"/>
+                        </aixm:AirspaceVolume>
+                     </aixm:theAirspaceVolume>
+                  </aixm:AirspaceGeometryComponent>
+               </aixm:geometryComponent>
+               <aixm:annotation>
+                  <aixm:Note>
+                     <aixm:propertyName xsi:nil="true"/>
+                     <aixm:purpose>REMARK</aixm:purpose>
+                     <aixm:translatedNote>
+                        <aixm:LinguisticNote>
+                           <aixm:note lang="eng"/>
+                        </aixm:LinguisticNote>
+                     </aixm:translatedNote>
+                  </aixm:Note>
+               </aixm:annotation>
+            </aixm:AirspaceTimeSlice>
+         </aixm:timeSlice>
+      </aixm:Airspace>
+   </message:hasMember>
+   <message:hasMember xlink:type="simple">
+      <aixm:Airspace gml:id="uuid.a9b44164-8890-413b-8cdb-431a5f9e2409">
+         <gml:identifier codeSpace="urn:uuid:">a9b44164-8890-413b-8cdb-431a5f9e2409</gml:identifier>
+         <gml:boundedBy xsi:nil="true"/>
+         <aixm:timeSlice>
+            <aixm:AirspaceTimeSlice gml:id="uuid.f9b9822d-68d2-4b52-9ad5-1192a43a4587">
+               <gml:validTime xlink:type="simple">
+                  <gml:TimePeriod>
+                     <gml:beginPosition>2012-04-08T00:00:00Z</gml:beginPosition>
+                     <gml:endPosition indeterminatePosition="unknown"/>
+                  </gml:TimePeriod>
+               </gml:validTime>
+               <aixm:interpretation>BASELINE</aixm:interpretation>
+               <aixm:sequenceNumber>1</aixm:sequenceNumber>
+               <aixm:correctionNumber>0</aixm:correctionNumber>
+               <aixm:type>TRA</aixm:type>
+               <aixm:designator>LHTRA22D</aixm:designator>
+               <aixm:localType xsi:nil="true"/>
+               <aixm:name>SOUTH DELTA</aixm:name>
+               <aixm:designatorICAO>yes</aixm:designatorICAO>
+               <aixm:controlType>CIVIL</aixm:controlType>
+               <aixm:upperLowerSeparation xsi:nil="true"/>
+               <aixm:protectedRoute xsi:nil="true"/>
+               <aixm:geometryComponent>
+                  <aixm:AirspaceGeometryComponent>
+                     <aixm:operation xsi:nil="true"/>
+                     <aixm:operationSequence xsi:nil="true"/>
+                     <aixm:theAirspaceVolume>
+                        <aixm:AirspaceVolume>
+                           <aixm:upperLimit uom="FL">145.0</aixm:upperLimit>
+                           <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+                           <aixm:maximumLimit xsi:nil="true"/>
+                           <aixm:maximumLimitReference xsi:nil="true"/>
+                           <aixm:lowerLimit uom="FT">9500.0</aixm:lowerLimit>
+                           <aixm:lowerLimitReference>MSL</aixm:lowerLimitReference>
+                           <aixm:minimumLimit xsi:nil="true"/>
+                           <aixm:minimumLimitReference xsi:nil="true"/>
+                           <aixm:width xsi:nil="true"/>
+                           <aixm:horizontalProjection>
+                              <aixm:Surface srsName="urn:ogc:def:crs:EPSG:4326">
+                                 <gml:patches>
+                                    <gml:PolygonPatch interpolation="planar">
+                                       <gml:exterior>
+                                          <gml:Ring>
+                                             <gml:curveMember xlink:type="simple">
+                                                <gml:Curve>
+                                                   <gml:segments>
+                                                      <gml:GeodesicString interpolation="geodesic">
+                                                         <gml:posList>46.99583333333334 19.045 46.36194444444445 19.66444444444444 46.24138888888889 19.149722222222223 46.51555555555556 18.829722222222223 46.56027777777778 18.941944444444445 46.652499999999996 18.86722222222222 46.6 18.734722222222224 46.814166666666665 18.476388888888888 46.99583333333334 19.045</gml:posList>
+                                                      </gml:GeodesicString>
+                                                   </gml:segments>
+                                                </gml:Curve>
+                                             </gml:curveMember>
+                                          </gml:Ring>
+                                       </gml:exterior>
+                                    </gml:PolygonPatch>
+                                 </gml:patches>
+                                 <aixm:horizontalAccuracy xsi:nil="true"/>
+                              </aixm:Surface>
+                           </aixm:horizontalProjection>
+                           <aixm:centreline xsi:nil="true"/>
+                           <aixm:contributorAirspace xsi:nil="true"/>
+                        </aixm:AirspaceVolume>
+                     </aixm:theAirspaceVolume>
+                  </aixm:AirspaceGeometryComponent>
+               </aixm:geometryComponent>
+               <aixm:annotation>
+                  <aixm:Note>
+                     <aixm:propertyName xsi:nil="true"/>
+                     <aixm:purpose>REMARK</aixm:purpose>
+                     <aixm:translatedNote>
+                        <aixm:LinguisticNote>
+                           <aixm:note lang="eng"/>
+                        </aixm:LinguisticNote>
+                     </aixm:translatedNote>
+                  </aixm:Note>
+               </aixm:annotation>
+            </aixm:AirspaceTimeSlice>
+         </aixm:timeSlice>
+      </aixm:Airspace>
+   </message:hasMember>
+   <message:hasMember xlink:type="simple">
+      <aixm:Airspace gml:id="uuid.0e50a4be-a1ee-4e48-b50b-3955e24a283d">
+         <gml:identifier codeSpace="urn:uuid:">0e50a4be-a1ee-4e48-b50b-3955e24a283d</gml:identifier>
+         <gml:boundedBy xsi:nil="true"/>
+         <aixm:timeSlice>
+            <aixm:AirspaceTimeSlice gml:id="uuid.570f54c3-05c4-4c6e-b7af-7b70d981660b">
+               <gml:validTime xlink:type="simple">
+                  <gml:TimePeriod>
+                     <gml:beginPosition>2012-04-08T00:00:00Z</gml:beginPosition>
+                     <gml:endPosition indeterminatePosition="unknown"/>
+                  </gml:TimePeriod>
+               </gml:validTime>
+               <aixm:interpretation>BASELINE</aixm:interpretation>
+               <aixm:sequenceNumber>1</aixm:sequenceNumber>
+               <aixm:correctionNumber>0</aixm:correctionNumber>
+               <aixm:type>TRA</aixm:type>
+               <aixm:designator>LHTRA22E</aixm:designator>
+               <aixm:localType xsi:nil="true"/>
+               <aixm:name>SOUTH ECHO</aixm:name>
+               <aixm:designatorICAO>yes</aixm:designatorICAO>
+               <aixm:controlType>CIVIL</aixm:controlType>
+               <aixm:upperLowerSeparation xsi:nil="true"/>
+               <aixm:protectedRoute xsi:nil="true"/>
+               <aixm:geometryComponent>
+                  <aixm:AirspaceGeometryComponent>
+                     <aixm:operation xsi:nil="true"/>
+                     <aixm:operationSequence xsi:nil="true"/>
+                     <aixm:theAirspaceVolume>
+                        <aixm:AirspaceVolume>
+                           <aixm:upperLimit uom="FL">125.0</aixm:upperLimit>
+                           <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+                           <aixm:maximumLimit xsi:nil="true"/>
+                           <aixm:maximumLimitReference xsi:nil="true"/>
+                           <aixm:lowerLimit uom="FT">9500.0</aixm:lowerLimit>
+                           <aixm:lowerLimitReference>MSL</aixm:lowerLimitReference>
+                           <aixm:minimumLimit xsi:nil="true"/>
+                           <aixm:minimumLimitReference xsi:nil="true"/>
+                           <aixm:width xsi:nil="true"/>
+                           <aixm:horizontalProjection>
+                              <aixm:Surface srsName="urn:ogc:def:crs:EPSG:4326">
+                                 <gml:patches>
+                                    <gml:PolygonPatch interpolation="planar">
+                                       <gml:exterior>
+                                          <gml:Ring>
+                                             <gml:curveMember xlink:type="simple">
+                                                <gml:Curve>
+                                                   <gml:segments>
+                                                      <gml:GeodesicString interpolation="geodesic">
+                                                         <gml:posList>46.66583333333333 19.37027777777778 46.66638888888889 19.498333333333335 46.62444444444444 19.78805555555556 46.446666666666665 19.94472222222222 46.36194444444445 19.66444444444444 46.66583333333333 19.37027777777778</gml:posList>
+                                                      </gml:GeodesicString>
+                                                   </gml:segments>
+                                                </gml:Curve>
+                                             </gml:curveMember>
+                                          </gml:Ring>
+                                       </gml:exterior>
+                                    </gml:PolygonPatch>
+                                 </gml:patches>
+                                 <aixm:horizontalAccuracy xsi:nil="true"/>
+                              </aixm:Surface>
+                           </aixm:horizontalProjection>
+                           <aixm:centreline xsi:nil="true"/>
+                           <aixm:contributorAirspace xsi:nil="true"/>
+                        </aixm:AirspaceVolume>
+                     </aixm:theAirspaceVolume>
+                  </aixm:AirspaceGeometryComponent>
+               </aixm:geometryComponent>
+               <aixm:annotation>
+                  <aixm:Note>
+                     <aixm:propertyName xsi:nil="true"/>
+                     <aixm:purpose>REMARK</aixm:purpose>
+                     <aixm:translatedNote>
+                        <aixm:LinguisticNote>
+                           <aixm:note lang="eng"/>
+                        </aixm:LinguisticNote>
+                     </aixm:translatedNote>
+                  </aixm:Note>
+               </aixm:annotation>
+            </aixm:AirspaceTimeSlice>
+         </aixm:timeSlice>
+      </aixm:Airspace>
+   </message:hasMember>
+   <message:hasMember xlink:type="simple">
+      <aixm:Airspace gml:id="uuid.54aeb4b2-50c8-479e-94e7-c85c49edf4cb">
+         <gml:identifier codeSpace="urn:uuid:">54aeb4b2-50c8-479e-94e7-c85c49edf4cb</gml:identifier>
+         <gml:boundedBy xsi:nil="true"/>
+         <aixm:timeSlice>
+            <aixm:AirspaceTimeSlice gml:id="uuid.673cf55c-dab5-465a-912d-3b7183df9085">
+               <gml:validTime xlink:type="simple">
+                  <gml:TimePeriod>
+                     <gml:beginPosition>2012-04-08T00:00:00Z</gml:beginPosition>
+                     <gml:endPosition indeterminatePosition="unknown"/>
+                  </gml:TimePeriod>
+               </gml:validTime>
+               <aixm:interpretation>BASELINE</aixm:interpretation>
+               <aixm:sequenceNumber>1</aixm:sequenceNumber>
+               <aixm:correctionNumber>0</aixm:correctionNumber>
+               <aixm:type>TRA</aixm:type>
+               <aixm:designator>LHTRA22F</aixm:designator>
+               <aixm:localType xsi:nil="true"/>
+               <aixm:name>SOUTH FOXTROT</aixm:name>
+               <aixm:designatorICAO>yes</aixm:designatorICAO>
+               <aixm:controlType>CIVIL</aixm:controlType>
+               <aixm:upperLowerSeparation xsi:nil="true"/>
+               <aixm:protectedRoute xsi:nil="true"/>
+               <aixm:geometryComponent>
+                  <aixm:AirspaceGeometryComponent>
+                     <aixm:operation xsi:nil="true"/>
+                     <aixm:operationSequence xsi:nil="true"/>
+                     <aixm:theAirspaceVolume>
+                        <aixm:AirspaceVolume>
+                           <aixm:upperLimit uom="FT">9500.0</aixm:upperLimit>
+                           <aixm:upperLimitReference>MSL</aixm:upperLimitReference>
+                           <aixm:maximumLimit xsi:nil="true"/>
+                           <aixm:maximumLimitReference xsi:nil="true"/>
+                           <aixm:lowerLimit uom="FT">4000.0</aixm:lowerLimit>
+                           <aixm:lowerLimitReference>MSL</aixm:lowerLimitReference>
+                           <aixm:minimumLimit xsi:nil="true"/>
+                           <aixm:minimumLimitReference xsi:nil="true"/>
+                           <aixm:width xsi:nil="true"/>
+                           <aixm:horizontalProjection>
+                              <aixm:Surface srsName="urn:ogc:def:crs:EPSG:4326">
+                                 <gml:patches>
+                                    <gml:PolygonPatch interpolation="planar">
+                                       <gml:exterior>
+                                          <gml:Ring>
+                                             <gml:curveMember xlink:type="simple">
+                                                <gml:Curve>
+                                                   <gml:segments>
+                                                      <gml:GeodesicString interpolation="geodesic">
+                                                         <gml:posList>46.846111111111114 19.192777777777778 46.36194444444445 19.66444444444444 46.25333333333333 19.198888888888888 46.73111111111111 18.803055555555556 46.846111111111114 19.192777777777778</gml:posList>
+                                                      </gml:GeodesicString>
+                                                   </gml:segments>
+                                                </gml:Curve>
+                                             </gml:curveMember>
+                                          </gml:Ring>
+                                       </gml:exterior>
+                                    </gml:PolygonPatch>
+                                 </gml:patches>
+                                 <aixm:horizontalAccuracy xsi:nil="true"/>
+                              </aixm:Surface>
+                           </aixm:horizontalProjection>
+                           <aixm:centreline xsi:nil="true"/>
+                           <aixm:contributorAirspace xsi:nil="true"/>
+                        </aixm:AirspaceVolume>
+                     </aixm:theAirspaceVolume>
+                  </aixm:AirspaceGeometryComponent>
+               </aixm:geometryComponent>
+               <aixm:annotation>
+                  <aixm:Note>
+                     <aixm:propertyName xsi:nil="true"/>
+                     <aixm:purpose>REMARK</aixm:purpose>
+                     <aixm:translatedNote>
+                        <aixm:LinguisticNote>
+                           <aixm:note lang="eng"/>
+                        </aixm:LinguisticNote>
+                     </aixm:translatedNote>
+                  </aixm:Note>
+               </aixm:annotation>
+            </aixm:AirspaceTimeSlice>
+         </aixm:timeSlice>
+      </aixm:Airspace>
+   </message:hasMember>
+   <message:hasMember xlink:type="simple">
+      <aixm:Airspace gml:id="uuid.513db4cc-cf2d-4053-a679-8c8964b95d66">
+         <gml:identifier codeSpace="urn:uuid:">513db4cc-cf2d-4053-a679-8c8964b95d66</gml:identifier>
+         <gml:boundedBy xsi:nil="true"/>
+         <aixm:timeSlice>
+            <aixm:AirspaceTimeSlice gml:id="uuid.76d8f853-c003-47de-a286-bc965aaabb82">
+               <gml:validTime xlink:type="simple">
+                  <gml:TimePeriod>
+                     <gml:beginPosition>2012-04-08T00:00:00Z</gml:beginPosition>
+                     <gml:endPosition indeterminatePosition="unknown"/>
+                  </gml:TimePeriod>
+               </gml:validTime>
+               <aixm:interpretation>BASELINE</aixm:interpretation>
+               <aixm:sequenceNumber>1</aixm:sequenceNumber>
+               <aixm:correctionNumber>0</aixm:correctionNumber>
+               <aixm:type>TRA</aixm:type>
+               <aixm:designator>LHTRA23A</aixm:designator>
+               <aixm:localType xsi:nil="true"/>
+               <aixm:name>EAST ALPHA</aixm:name>
+               <aixm:designatorICAO>yes</aixm:designatorICAO>
+               <aixm:controlType>CIVIL</aixm:controlType>
+               <aixm:upperLowerSeparation xsi:nil="true"/>
+               <aixm:protectedRoute xsi:nil="true"/>
+               <aixm:geometryComponent>
+                  <aixm:AirspaceGeometryComponent>
+                     <aixm:operation xsi:nil="true"/>
+                     <aixm:operationSequence xsi:nil="true"/>
+                     <aixm:theAirspaceVolume>
+                        <aixm:AirspaceVolume>
+                           <aixm:upperLimit uom="FL">245.0</aixm:upperLimit>
+                           <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+                           <aixm:maximumLimit xsi:nil="true"/>
+                           <aixm:maximumLimitReference xsi:nil="true"/>
+                           <aixm:lowerLimit uom="FT">9500.0</aixm:lowerLimit>
+                           <aixm:lowerLimitReference>MSL</aixm:lowerLimitReference>
+                           <aixm:minimumLimit xsi:nil="true"/>
+                           <aixm:minimumLimitReference xsi:nil="true"/>
+                           <aixm:width xsi:nil="true"/>
+                           <aixm:horizontalProjection>
+                              <aixm:Surface srsName="urn:ogc:def:crs:EPSG:4326">
+                                 <gml:patches>
+                                    <gml:PolygonPatch interpolation="planar">
+                                       <gml:exterior>
+                                          <gml:Ring>
+                                             <gml:curveMember xlink:type="simple">
+                                                <gml:Curve>
+                                                   <gml:segments>
+                                                      <gml:GeodesicString interpolation="geodesic">
+                                                         <gml:posList>48.1875 20.42361111111111 47.76638888888889 21.560833333333335 47.36694444444444 21.720277777777778 47.20277777777778 21.55027777777778 47.085 21.468888888888888 47.49527777777778 20.268055555555556 47.96666666666667 19.9375 48.1875 20.42361111111111</gml:posList>
+                                                      </gml:GeodesicString>
+                                                   </gml:segments>
+                                                </gml:Curve>
+                                             </gml:curveMember>
+                                          </gml:Ring>
+                                       </gml:exterior>
+                                    </gml:PolygonPatch>
+                                 </gml:patches>
+                                 <aixm:horizontalAccuracy xsi:nil="true"/>
+                              </aixm:Surface>
+                           </aixm:horizontalProjection>
+                           <aixm:centreline xsi:nil="true"/>
+                           <aixm:contributorAirspace xsi:nil="true"/>
+                        </aixm:AirspaceVolume>
+                     </aixm:theAirspaceVolume>
+                  </aixm:AirspaceGeometryComponent>
+               </aixm:geometryComponent>
+               <aixm:annotation>
+                  <aixm:Note>
+                     <aixm:propertyName xsi:nil="true"/>
+                     <aixm:purpose>REMARK</aixm:purpose>
+                     <aixm:translatedNote>
+                        <aixm:LinguisticNote>
+                           <aixm:note lang="eng"/>
+                        </aixm:LinguisticNote>
+                     </aixm:translatedNote>
+                  </aixm:Note>
+               </aixm:annotation>
+            </aixm:AirspaceTimeSlice>
+         </aixm:timeSlice>
+      </aixm:Airspace>
+   </message:hasMember>
+   <message:hasMember xlink:type="simple">
+      <aixm:Airspace gml:id="uuid.d9cfc3c3-8415-4494-8fa5-674ca561e14e">
+         <gml:identifier codeSpace="urn:uuid:">d9cfc3c3-8415-4494-8fa5-674ca561e14e</gml:identifier>
+         <gml:boundedBy xsi:nil="true"/>
+         <aixm:timeSlice>
+            <aixm:AirspaceTimeSlice gml:id="uuid.da8b9699-05f4-45ee-bf83-3341ab0aba00">
+               <gml:validTime xlink:type="simple">
+                  <gml:TimePeriod>
+                     <gml:beginPosition>2012-04-08T00:00:00Z</gml:beginPosition>
+                     <gml:endPosition indeterminatePosition="unknown"/>
+                  </gml:TimePeriod>
+               </gml:validTime>
+               <aixm:interpretation>BASELINE</aixm:interpretation>
+               <aixm:sequenceNumber>1</aixm:sequenceNumber>
+               <aixm:correctionNumber>0</aixm:correctionNumber>
+               <aixm:type>TRA</aixm:type>
+               <aixm:designator>LHTRA23B</aixm:designator>
+               <aixm:localType xsi:nil="true"/>
+               <aixm:name>EAST BRAVO</aixm:name>
+               <aixm:designatorICAO>yes</aixm:designatorICAO>
+               <aixm:controlType>CIVIL</aixm:controlType>
+               <aixm:upperLowerSeparation xsi:nil="true"/>
+               <aixm:protectedRoute xsi:nil="true"/>
+               <aixm:geometryComponent>
+                  <aixm:AirspaceGeometryComponent>
+                     <aixm:operation xsi:nil="true"/>
+                     <aixm:operationSequence xsi:nil="true"/>
+                     <aixm:theAirspaceVolume>
+                        <aixm:AirspaceVolume>
+                           <aixm:upperLimit uom="FL">175.0</aixm:upperLimit>
+                           <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+                           <aixm:maximumLimit xsi:nil="true"/>
+                           <aixm:maximumLimitReference xsi:nil="true"/>
+                           <aixm:lowerLimit uom="FL">135.0</aixm:lowerLimit>
+                           <aixm:lowerLimitReference>STD</aixm:lowerLimitReference>
+                           <aixm:minimumLimit xsi:nil="true"/>
+                           <aixm:minimumLimitReference xsi:nil="true"/>
+                           <aixm:width xsi:nil="true"/>
+                           <aixm:horizontalProjection>
+                              <aixm:Surface srsName="urn:ogc:def:crs:EPSG:4326">
+                                 <gml:patches>
+                                    <gml:PolygonPatch interpolation="planar">
+                                       <gml:exterior>
+                                          <gml:Ring>
+                                             <gml:curveMember xlink:type="simple">
+                                                <gml:Curve>
+                                                   <gml:segments>
+                                                      <gml:GeodesicString interpolation="geodesic">
+                                                         <gml:posList>47.36694444444444 21.720277777777778 47.19027777777777 21.79138888888889 47.03861111111111 21.613611111111112 46.864444444444445 21.5075 47.263333333333335 20.515 47.49527777777778 20.268055555555556 47.085 21.468888888888888 47.20277777777778 21.55027777777778 47.36694444444444 21.720277777777778</gml:posList>
+                                                      </gml:GeodesicString>
+                                                   </gml:segments>
+                                                </gml:Curve>
+                                             </gml:curveMember>
+                                          </gml:Ring>
+                                       </gml:exterior>
+                                    </gml:PolygonPatch>
+                                 </gml:patches>
+                                 <aixm:horizontalAccuracy xsi:nil="true"/>
+                              </aixm:Surface>
+                           </aixm:horizontalProjection>
+                           <aixm:centreline xsi:nil="true"/>
+                           <aixm:contributorAirspace xsi:nil="true"/>
+                        </aixm:AirspaceVolume>
+                     </aixm:theAirspaceVolume>
+                  </aixm:AirspaceGeometryComponent>
+               </aixm:geometryComponent>
+               <aixm:annotation>
+                  <aixm:Note>
+                     <aixm:propertyName xsi:nil="true"/>
+                     <aixm:purpose>REMARK</aixm:purpose>
+                     <aixm:translatedNote>
+                        <aixm:LinguisticNote>
+                           <aixm:note lang="eng"/>
+                        </aixm:LinguisticNote>
+                     </aixm:translatedNote>
+                  </aixm:Note>
+               </aixm:annotation>
+            </aixm:AirspaceTimeSlice>
+         </aixm:timeSlice>
+      </aixm:Airspace>
+   </message:hasMember>
+   <message:hasMember xlink:type="simple">
+      <aixm:Airspace gml:id="uuid.7f76a2b1-699c-4a78-89eb-b5649534476e">
+         <gml:identifier codeSpace="urn:uuid:">7f76a2b1-699c-4a78-89eb-b5649534476e</gml:identifier>
+         <gml:boundedBy xsi:nil="true"/>
+         <aixm:timeSlice>
+            <aixm:AirspaceTimeSlice gml:id="uuid.01f27d2b-907c-4066-a562-01587ad97766">
+               <gml:validTime xlink:type="simple">
+                  <gml:TimePeriod>
+                     <gml:beginPosition>2012-04-08T00:00:00Z</gml:beginPosition>
+                     <gml:endPosition indeterminatePosition="unknown"/>
+                  </gml:TimePeriod>
+               </gml:validTime>
+               <aixm:interpretation>BASELINE</aixm:interpretation>
+               <aixm:sequenceNumber>1</aixm:sequenceNumber>
+               <aixm:correctionNumber>0</aixm:correctionNumber>
+               <aixm:type>TRA</aixm:type>
+               <aixm:designator>LHTRA23C</aixm:designator>
+               <aixm:localType xsi:nil="true"/>
+               <aixm:name>EAST CHARLIE</aixm:name>
+               <aixm:designatorICAO>yes</aixm:designatorICAO>
+               <aixm:controlType>CIVIL</aixm:controlType>
+               <aixm:upperLowerSeparation xsi:nil="true"/>
+               <aixm:protectedRoute xsi:nil="true"/>
+               <aixm:geometryComponent>
+                  <aixm:AirspaceGeometryComponent>
+                     <aixm:operation xsi:nil="true"/>
+                     <aixm:operationSequence xsi:nil="true"/>
+                     <aixm:theAirspaceVolume>
+                        <aixm:AirspaceVolume>
+                           <aixm:upperLimit uom="FL">175.0</aixm:upperLimit>
+                           <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+                           <aixm:maximumLimit xsi:nil="true"/>
+                           <aixm:maximumLimitReference xsi:nil="true"/>
+                           <aixm:lowerLimit uom="FL">135.0</aixm:lowerLimit>
+                           <aixm:lowerLimitReference>STD</aixm:lowerLimitReference>
+                           <aixm:minimumLimit xsi:nil="true"/>
+                           <aixm:minimumLimitReference xsi:nil="true"/>
+                           <aixm:width xsi:nil="true"/>
+                           <aixm:horizontalProjection>
+                              <aixm:Surface srsName="urn:ogc:def:crs:EPSG:4326">
+                                 <gml:patches>
+                                    <gml:PolygonPatch interpolation="planar">
+                                       <gml:exterior>
+                                          <gml:Ring>
+                                             <gml:curveMember xlink:type="simple">
+                                                <gml:Curve>
+                                                   <gml:segments>
+                                                      <gml:GeodesicString interpolation="geodesic">
+                                                         <gml:posList>47.96666666666667 19.9375 48.11944444444445 19.91444444444444 48.299166666666665 20.455 47.97916666666667 21.46944444444444 47.76638888888889 21.560833333333335 48.1875 20.42361111111111 47.96666666666667 19.9375</gml:posList>
+                                                      </gml:GeodesicString>
+                                                   </gml:segments>
+                                                </gml:Curve>
+                                             </gml:curveMember>
+                                          </gml:Ring>
+                                       </gml:exterior>
+                                    </gml:PolygonPatch>
+                                 </gml:patches>
+                                 <aixm:horizontalAccuracy xsi:nil="true"/>
+                              </aixm:Surface>
+                           </aixm:horizontalProjection>
+                           <aixm:centreline xsi:nil="true"/>
+                           <aixm:contributorAirspace xsi:nil="true"/>
+                        </aixm:AirspaceVolume>
+                     </aixm:theAirspaceVolume>
+                  </aixm:AirspaceGeometryComponent>
+               </aixm:geometryComponent>
+               <aixm:annotation>
+                  <aixm:Note>
+                     <aixm:propertyName xsi:nil="true"/>
+                     <aixm:purpose>REMARK</aixm:purpose>
+                     <aixm:translatedNote>
+                        <aixm:LinguisticNote>
+                           <aixm:note lang="eng"/>
+                        </aixm:LinguisticNote>
+                     </aixm:translatedNote>
+                  </aixm:Note>
+               </aixm:annotation>
+            </aixm:AirspaceTimeSlice>
+         </aixm:timeSlice>
+      </aixm:Airspace>
+   </message:hasMember>
+   <message:hasMember xlink:type="simple">
+      <aixm:Airspace gml:id="uuid.9b933557-6e35-4cbe-85d7-8f1fd1777d01">
+         <gml:identifier codeSpace="urn:uuid:">9b933557-6e35-4cbe-85d7-8f1fd1777d01</gml:identifier>
+         <gml:boundedBy xsi:nil="true"/>
+         <aixm:timeSlice>
+            <aixm:AirspaceTimeSlice gml:id="uuid.c6ca6d17-0a8a-488a-8985-707ce4cade35">
+               <gml:validTime xlink:type="simple">
+                  <gml:TimePeriod>
+                     <gml:beginPosition>2012-04-08T00:00:00Z</gml:beginPosition>
+                     <gml:endPosition indeterminatePosition="unknown"/>
+                  </gml:TimePeriod>
+               </gml:validTime>
+               <aixm:interpretation>BASELINE</aixm:interpretation>
+               <aixm:sequenceNumber>1</aixm:sequenceNumber>
+               <aixm:correctionNumber>0</aixm:correctionNumber>
+               <aixm:type>TRA</aixm:type>
+               <aixm:designator>LHTRA23D</aixm:designator>
+               <aixm:localType xsi:nil="true"/>
+               <aixm:name>EAST DELTA</aixm:name>
+               <aixm:designatorICAO>yes</aixm:designatorICAO>
+               <aixm:controlType>CIVIL</aixm:controlType>
+               <aixm:upperLowerSeparation xsi:nil="true"/>
+               <aixm:protectedRoute xsi:nil="true"/>
+               <aixm:geometryComponent>
+                  <aixm:AirspaceGeometryComponent>
+                     <aixm:operation xsi:nil="true"/>
+                     <aixm:operationSequence xsi:nil="true"/>
+                     <aixm:theAirspaceVolume>
+                        <aixm:AirspaceVolume>
+                           <aixm:upperLimit uom="FT">9500.0</aixm:upperLimit>
+                           <aixm:upperLimitReference>MSL</aixm:upperLimitReference>
+                           <aixm:maximumLimit xsi:nil="true"/>
+                           <aixm:maximumLimitReference xsi:nil="true"/>
+                           <aixm:lowerLimit uom="FT">4000.0</aixm:lowerLimit>
+                           <aixm:lowerLimitReference>MSL</aixm:lowerLimitReference>
+                           <aixm:minimumLimit xsi:nil="true"/>
+                           <aixm:minimumLimitReference xsi:nil="true"/>
+                           <aixm:width xsi:nil="true"/>
+                           <aixm:horizontalProjection>
+                              <aixm:Surface srsName="urn:ogc:def:crs:EPSG:4326">
+                                 <gml:patches>
+                                    <gml:PolygonPatch interpolation="planar">
+                                       <gml:exterior>
+                                          <gml:Ring>
+                                             <gml:curveMember xlink:type="simple">
+                                                <gml:Curve>
+                                                   <gml:segments>
+                                                      <gml:GeodesicString interpolation="geodesic">
+                                                         <gml:posList>48.1875 20.42361111111111 47.83833333333334 21.3675 47.38111111111111 21.036944444444448 47.69027777777777 20.13222222222222 47.96666666666667 19.9375 48.1875 20.42361111111111</gml:posList>
+                                                      </gml:GeodesicString>
+                                                   </gml:segments>
+                                                </gml:Curve>
+                                             </gml:curveMember>
+                                          </gml:Ring>
+                                       </gml:exterior>
+                                    </gml:PolygonPatch>
+                                 </gml:patches>
+                                 <aixm:horizontalAccuracy xsi:nil="true"/>
+                              </aixm:Surface>
+                           </aixm:horizontalProjection>
+                           <aixm:centreline xsi:nil="true"/>
+                           <aixm:contributorAirspace xsi:nil="true"/>
+                        </aixm:AirspaceVolume>
+                     </aixm:theAirspaceVolume>
+                  </aixm:AirspaceGeometryComponent>
+               </aixm:geometryComponent>
+               <aixm:annotation>
+                  <aixm:Note>
+                     <aixm:propertyName xsi:nil="true"/>
+                     <aixm:purpose>REMARK</aixm:purpose>
+                     <aixm:translatedNote>
+                        <aixm:LinguisticNote>
+                           <aixm:note lang="eng"/>
+                        </aixm:LinguisticNote>
+                     </aixm:translatedNote>
+                  </aixm:Note>
+               </aixm:annotation>
+            </aixm:AirspaceTimeSlice>
+         </aixm:timeSlice>
+      </aixm:Airspace>
+   </message:hasMember>
+   <message:hasMember xlink:type="simple">
+      <aixm:Airspace gml:id="uuid.f68a006f-296a-46c6-95e9-76c9ba039b0f">
+         <gml:identifier codeSpace="urn:uuid:">f68a006f-296a-46c6-95e9-76c9ba039b0f</gml:identifier>
+         <gml:boundedBy xsi:nil="true"/>
+         <aixm:timeSlice>
+            <aixm:AirspaceTimeSlice gml:id="uuid.a3ec6dc0-af6c-419b-9252-592f4e9cb179">
+               <gml:validTime xlink:type="simple">
+                  <gml:TimePeriod>
+                     <gml:beginPosition>2012-04-08T00:00:00Z</gml:beginPosition>
+                     <gml:endPosition indeterminatePosition="unknown"/>
+                  </gml:TimePeriod>
+               </gml:validTime>
+               <aixm:interpretation>BASELINE</aixm:interpretation>
+               <aixm:sequenceNumber>1</aixm:sequenceNumber>
+               <aixm:correctionNumber>0</aixm:correctionNumber>
+               <aixm:type>TRA</aixm:type>
+               <aixm:designator>LHTRA23E</aixm:designator>
+               <aixm:localType xsi:nil="true"/>
+               <aixm:name>EAST ECHO</aixm:name>
+               <aixm:designatorICAO>yes</aixm:designatorICAO>
+               <aixm:controlType>CIVIL</aixm:controlType>
+               <aixm:upperLowerSeparation xsi:nil="true"/>
+               <aixm:protectedRoute xsi:nil="true"/>
+               <aixm:geometryComponent>
+                  <aixm:AirspaceGeometryComponent>
+                     <aixm:operation xsi:nil="true"/>
+                     <aixm:operationSequence xsi:nil="true"/>
+                     <aixm:theAirspaceVolume>
+                        <aixm:AirspaceVolume>
+                           <aixm:upperLimit uom="FT">4000.0</aixm:upperLimit>
+                           <aixm:upperLimitReference>MSL</aixm:upperLimitReference>
+                           <aixm:maximumLimit xsi:nil="true"/>
+                           <aixm:maximumLimitReference xsi:nil="true"/>
+                           <aixm:lowerLimit uom="FT">0.0</aixm:lowerLimit>
+                           <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
+                           <aixm:minimumLimit xsi:nil="true"/>
+                           <aixm:minimumLimitReference xsi:nil="true"/>
+                           <aixm:width xsi:nil="true"/>
+                           <aixm:horizontalProjection>
+                              <aixm:Surface srsName="urn:ogc:def:crs:EPSG:4326">
+                                 <gml:patches>
+                                    <gml:PolygonPatch interpolation="planar">
+                                       <gml:exterior>
+                                          <gml:Ring>
+                                             <gml:curveMember xlink:type="simple">
+                                                <gml:Curve>
+                                                   <gml:segments>
+                                                      <gml:GeodesicString interpolation="geodesic">
+                                                         <gml:posList>48.1875 20.42361111111111 47.83833333333334 21.3675 47.38111111111111 21.036944444444448 47.69027777777777 20.13222222222222 47.96666666666667 19.9375 48.1875 20.42361111111111</gml:posList>
+                                                      </gml:GeodesicString>
+                                                   </gml:segments>
+                                                </gml:Curve>
+                                             </gml:curveMember>
+                                          </gml:Ring>
+                                       </gml:exterior>
+                                    </gml:PolygonPatch>
+                                 </gml:patches>
+                                 <aixm:horizontalAccuracy xsi:nil="true"/>
+                              </aixm:Surface>
+                           </aixm:horizontalProjection>
+                           <aixm:centreline xsi:nil="true"/>
+                           <aixm:contributorAirspace xsi:nil="true"/>
+                        </aixm:AirspaceVolume>
+                     </aixm:theAirspaceVolume>
+                  </aixm:AirspaceGeometryComponent>
+               </aixm:geometryComponent>
+               <aixm:annotation>
+                  <aixm:Note>
+                     <aixm:propertyName xsi:nil="true"/>
+                     <aixm:purpose>REMARK</aixm:purpose>
+                     <aixm:translatedNote>
+                        <aixm:LinguisticNote>
+                           <aixm:note lang="eng"/>
+                        </aixm:LinguisticNote>
+                     </aixm:translatedNote>
+                  </aixm:Note>
+               </aixm:annotation>
+            </aixm:AirspaceTimeSlice>
+         </aixm:timeSlice>
+      </aixm:Airspace>
+   </message:hasMember>
+   <message:hasMember xlink:type="simple">
+      <aixm:Airspace gml:id="uuid.9dcfafcc-6e8d-4784-8b00-1c48c44e9c94">
+         <gml:identifier codeSpace="urn:uuid:">9dcfafcc-6e8d-4784-8b00-1c48c44e9c94</gml:identifier>
+         <gml:boundedBy xsi:nil="true"/>
+         <aixm:timeSlice>
+            <aixm:AirspaceTimeSlice gml:id="uuid.667ed146-0f07-4237-9110-aeb104fda9d8">
+               <gml:validTime xlink:type="simple">
+                  <gml:TimePeriod>
+                     <gml:beginPosition>2012-04-08T00:00:00Z</gml:beginPosition>
+                     <gml:endPosition indeterminatePosition="unknown"/>
+                  </gml:TimePeriod>
+               </gml:validTime>
+               <aixm:interpretation>BASELINE</aixm:interpretation>
+               <aixm:sequenceNumber>1</aixm:sequenceNumber>
+               <aixm:correctionNumber>0</aixm:correctionNumber>
+               <aixm:type>TRA</aixm:type>
+               <aixm:designator>LHTRA31A</aixm:designator>
+               <aixm:localType xsi:nil="true"/>
+               <aixm:name>UPPER WEST ALPHA</aixm:name>
+               <aixm:designatorICAO>yes</aixm:designatorICAO>
+               <aixm:controlType>CIVIL</aixm:controlType>
+               <aixm:upperLowerSeparation xsi:nil="true"/>
+               <aixm:protectedRoute xsi:nil="true"/>
+               <aixm:geometryComponent>
+                  <aixm:AirspaceGeometryComponent>
+                     <aixm:operation xsi:nil="true"/>
+                     <aixm:operationSequence xsi:nil="true"/>
+                     <aixm:theAirspaceVolume>
+                        <aixm:AirspaceVolume>
+                           <aixm:upperLimit uom="FL">285.0</aixm:upperLimit>
+                           <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+                           <aixm:maximumLimit xsi:nil="true"/>
+                           <aixm:maximumLimitReference xsi:nil="true"/>
+                           <aixm:lowerLimit uom="FL">245.0</aixm:lowerLimit>
+                           <aixm:lowerLimitReference>STD</aixm:lowerLimitReference>
+                           <aixm:minimumLimit xsi:nil="true"/>
+                           <aixm:minimumLimitReference xsi:nil="true"/>
+                           <aixm:width xsi:nil="true"/>
+                           <aixm:horizontalProjection>
+                              <aixm:Surface srsName="urn:ogc:def:crs:EPSG:4326">
+                                 <gml:patches>
+                                    <gml:PolygonPatch interpolation="planar">
+                                       <gml:exterior>
+                                          <gml:Ring>
+                                             <gml:curveMember xlink:type="simple">
+                                                <gml:Curve>
+                                                   <gml:segments>
+                                                      <gml:GeodesicString interpolation="geodesic">
+                                                         <gml:posList>46.56444444444444 18.001666666666665 46.474722222222226 18.691388888888888 46.166666666666664 19.091388888888886 46.04972222222222 18.668055555555558 45.96027777777778 18.3975 45.92472222222222 17.881666666666668 46.07916666666667 17.445833333333333 46.56444444444444 18.001666666666665</gml:posList>
+                                                      </gml:GeodesicString>
+                                                   </gml:segments>
+                                                </gml:Curve>
+                                             </gml:curveMember>
+                                          </gml:Ring>
+                                       </gml:exterior>
+                                    </gml:PolygonPatch>
+                                 </gml:patches>
+                                 <aixm:horizontalAccuracy xsi:nil="true"/>
+                              </aixm:Surface>
+                           </aixm:horizontalProjection>
+                           <aixm:centreline xsi:nil="true"/>
+                           <aixm:contributorAirspace xsi:nil="true"/>
+                        </aixm:AirspaceVolume>
+                     </aixm:theAirspaceVolume>
+                  </aixm:AirspaceGeometryComponent>
+               </aixm:geometryComponent>
+               <aixm:annotation>
+                  <aixm:Note>
+                     <aixm:propertyName xsi:nil="true"/>
+                     <aixm:purpose>REMARK</aixm:purpose>
+                     <aixm:translatedNote>
+                        <aixm:LinguisticNote>
+                           <aixm:note lang="eng"/>
+                        </aixm:LinguisticNote>
+                     </aixm:translatedNote>
+                  </aixm:Note>
+               </aixm:annotation>
+            </aixm:AirspaceTimeSlice>
+         </aixm:timeSlice>
+      </aixm:Airspace>
+   </message:hasMember>
+   <message:hasMember xlink:type="simple">
+      <aixm:Airspace gml:id="uuid.7a834f25-c2ae-46ba-93b9-0767e5fbaf33">
+         <gml:identifier codeSpace="urn:uuid:">7a834f25-c2ae-46ba-93b9-0767e5fbaf33</gml:identifier>
+         <gml:boundedBy xsi:nil="true"/>
+         <aixm:timeSlice>
+            <aixm:AirspaceTimeSlice gml:id="uuid.ab2742a3-d18c-465d-989e-13697f476f7d">
+               <gml:validTime xlink:type="simple">
+                  <gml:TimePeriod>
+                     <gml:beginPosition>2012-04-08T00:00:00Z</gml:beginPosition>
+                     <gml:endPosition indeterminatePosition="unknown"/>
+                  </gml:TimePeriod>
+               </gml:validTime>
+               <aixm:interpretation>BASELINE</aixm:interpretation>
+               <aixm:sequenceNumber>1</aixm:sequenceNumber>
+               <aixm:correctionNumber>0</aixm:correctionNumber>
+               <aixm:type>TRA</aixm:type>
+               <aixm:designator>LHTRA31B</aixm:designator>
+               <aixm:localType xsi:nil="true"/>
+               <aixm:name>UPPER WEST BRAVO</aixm:name>
+               <aixm:designatorICAO>yes</aixm:designatorICAO>
+               <aixm:controlType>CIVIL</aixm:controlType>
+               <aixm:upperLowerSeparation xsi:nil="true"/>
+               <aixm:protectedRoute xsi:nil="true"/>
+               <aixm:geometryComponent>
+                  <aixm:AirspaceGeometryComponent>
+                     <aixm:operation xsi:nil="true"/>
+                     <aixm:operationSequence xsi:nil="true"/>
+                     <aixm:theAirspaceVolume>
+                        <aixm:AirspaceVolume>
+                           <aixm:upperLimit uom="FL">285.0</aixm:upperLimit>
+                           <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+                           <aixm:maximumLimit xsi:nil="true"/>
+                           <aixm:maximumLimitReference xsi:nil="true"/>
+                           <aixm:lowerLimit uom="FL">245.0</aixm:lowerLimit>
+                           <aixm:lowerLimitReference>STD</aixm:lowerLimitReference>
+                           <aixm:minimumLimit xsi:nil="true"/>
+                           <aixm:minimumLimitReference xsi:nil="true"/>
+                           <aixm:width xsi:nil="true"/>
+                           <aixm:horizontalProjection>
+                              <aixm:Surface srsName="urn:ogc:def:crs:EPSG:4326">
+                                 <gml:patches>
+                                    <gml:PolygonPatch interpolation="planar">
+                                       <gml:exterior>
+                                          <gml:Ring>
+                                             <gml:curveMember xlink:type="simple">
+                                                <gml:Curve>
+                                                   <gml:segments>
+                                                      <gml:GeodesicString interpolation="geodesic">
+                                                         <gml:posList>46.70277777777778 16.783055555555556 46.56444444444444 18.001666666666665 46.07916666666667 17.445833333333333 46.60138888888889 16.702777777777776 46.70277777777778 16.783055555555556</gml:posList>
+                                                      </gml:GeodesicString>
+                                                   </gml:segments>
+                                                </gml:Curve>
+                                             </gml:curveMember>
+                                          </gml:Ring>
+                                       </gml:exterior>
+                                    </gml:PolygonPatch>
+                                 </gml:patches>
+                                 <aixm:horizontalAccuracy xsi:nil="true"/>
+                              </aixm:Surface>
+                           </aixm:horizontalProjection>
+                           <aixm:centreline xsi:nil="true"/>
+                           <aixm:contributorAirspace xsi:nil="true"/>
+                        </aixm:AirspaceVolume>
+                     </aixm:theAirspaceVolume>
+                  </aixm:AirspaceGeometryComponent>
+               </aixm:geometryComponent>
+               <aixm:annotation>
+                  <aixm:Note>
+                     <aixm:propertyName xsi:nil="true"/>
+                     <aixm:purpose>REMARK</aixm:purpose>
+                     <aixm:translatedNote>
+                        <aixm:LinguisticNote>
+                           <aixm:note lang="eng"/>
+                        </aixm:LinguisticNote>
+                     </aixm:translatedNote>
+                  </aixm:Note>
+               </aixm:annotation>
+            </aixm:AirspaceTimeSlice>
+         </aixm:timeSlice>
+      </aixm:Airspace>
+   </message:hasMember>
+   <message:hasMember xlink:type="simple">
+      <aixm:Airspace gml:id="uuid.93000d75-b7d3-4f6e-a55a-3b2338638a1f">
+         <gml:identifier codeSpace="urn:uuid:">93000d75-b7d3-4f6e-a55a-3b2338638a1f</gml:identifier>
+         <gml:boundedBy xsi:nil="true"/>
+         <aixm:timeSlice>
+            <aixm:AirspaceTimeSlice gml:id="uuid.3977e6f5-3e93-483b-ac2f-3558c3ccf7c0">
+               <gml:validTime xlink:type="simple">
+                  <gml:TimePeriod>
+                     <gml:beginPosition>2012-04-08T00:00:00Z</gml:beginPosition>
+                     <gml:endPosition indeterminatePosition="unknown"/>
+                  </gml:TimePeriod>
+               </gml:validTime>
+               <aixm:interpretation>BASELINE</aixm:interpretation>
+               <aixm:sequenceNumber>1</aixm:sequenceNumber>
+               <aixm:correctionNumber>0</aixm:correctionNumber>
+               <aixm:type>TRA</aixm:type>
+               <aixm:designator>LHTRA32A</aixm:designator>
+               <aixm:localType xsi:nil="true"/>
+               <aixm:name>UPPER EAST ALPHA</aixm:name>
+               <aixm:designatorICAO>yes</aixm:designatorICAO>
+               <aixm:controlType>CIVIL</aixm:controlType>
+               <aixm:upperLowerSeparation xsi:nil="true"/>
+               <aixm:protectedRoute xsi:nil="true"/>
+               <aixm:geometryComponent>
+                  <aixm:AirspaceGeometryComponent>
+                     <aixm:operation xsi:nil="true"/>
+                     <aixm:operationSequence xsi:nil="true"/>
+                     <aixm:theAirspaceVolume>
+                        <aixm:AirspaceVolume>
+                           <aixm:upperLimit uom="FL">305.0</aixm:upperLimit>
+                           <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+                           <aixm:maximumLimit xsi:nil="true"/>
+                           <aixm:maximumLimitReference xsi:nil="true"/>
+                           <aixm:lowerLimit uom="FL">245.0</aixm:lowerLimit>
+                           <aixm:lowerLimitReference>STD</aixm:lowerLimitReference>
+                           <aixm:minimumLimit xsi:nil="true"/>
+                           <aixm:minimumLimitReference xsi:nil="true"/>
+                           <aixm:width xsi:nil="true"/>
+                           <aixm:horizontalProjection>
+                              <aixm:Surface srsName="urn:ogc:def:crs:EPSG:4326">
+                                 <gml:patches>
+                                    <gml:PolygonPatch interpolation="planar">
+                                       <gml:exterior>
+                                          <gml:Ring>
+                                             <gml:curveMember xlink:type="simple">
+                                                <gml:Curve>
+                                                   <gml:segments>
+                                                      <gml:GeodesicString interpolation="geodesic">
+                                                         <gml:posList>47.96555555555556 21.119444444444444 47.319722222222225 21.67138888888889 47.20277777777778 21.55027777777778 46.84722222222222 21.305833333333332 47.263333333333335 20.514166666666668 47.49527777777778 20.268055555555556 47.69027777777777 20.13222222222222 47.96555555555556 21.119444444444444</gml:posList>
+                                                      </gml:GeodesicString>
+                                                   </gml:segments>
+                                                </gml:Curve>
+                                             </gml:curveMember>
+                                          </gml:Ring>
+                                       </gml:exterior>
+                                    </gml:PolygonPatch>
+                                 </gml:patches>
+                                 <aixm:horizontalAccuracy xsi:nil="true"/>
+                              </aixm:Surface>
+                           </aixm:horizontalProjection>
+                           <aixm:centreline xsi:nil="true"/>
+                           <aixm:contributorAirspace xsi:nil="true"/>
+                        </aixm:AirspaceVolume>
+                     </aixm:theAirspaceVolume>
+                  </aixm:AirspaceGeometryComponent>
+               </aixm:geometryComponent>
+               <aixm:annotation>
+                  <aixm:Note>
+                     <aixm:propertyName xsi:nil="true"/>
+                     <aixm:purpose>REMARK</aixm:purpose>
+                     <aixm:translatedNote>
+                        <aixm:LinguisticNote>
+                           <aixm:note lang="eng"/>
+                        </aixm:LinguisticNote>
+                     </aixm:translatedNote>
+                  </aixm:Note>
+               </aixm:annotation>
+            </aixm:AirspaceTimeSlice>
+         </aixm:timeSlice>
+      </aixm:Airspace>
+   </message:hasMember>
+   <message:hasMember xlink:type="simple">
+      <aixm:Airspace gml:id="uuid.b2f3ff51-8a43-4715-b951-a23fa2e30357">
+         <gml:identifier codeSpace="urn:uuid:">b2f3ff51-8a43-4715-b951-a23fa2e30357</gml:identifier>
+         <gml:boundedBy xsi:nil="true"/>
+         <aixm:timeSlice>
+            <aixm:AirspaceTimeSlice gml:id="uuid.1f577df6-75e0-45c9-9e84-9d571f1a18fa">
+               <gml:validTime xlink:type="simple">
+                  <gml:TimePeriod>
+                     <gml:beginPosition>2012-04-08T00:00:00Z</gml:beginPosition>
+                     <gml:endPosition indeterminatePosition="unknown"/>
+                  </gml:TimePeriod>
+               </gml:validTime>
+               <aixm:interpretation>BASELINE</aixm:interpretation>
+               <aixm:sequenceNumber>1</aixm:sequenceNumber>
+               <aixm:correctionNumber>0</aixm:correctionNumber>
+               <aixm:type>TRA</aixm:type>
+               <aixm:designator>LHTRA32B</aixm:designator>
+               <aixm:localType xsi:nil="true"/>
+               <aixm:name>UPPER EAST BRAVO</aixm:name>
+               <aixm:designatorICAO>yes</aixm:designatorICAO>
+               <aixm:controlType>CIVIL</aixm:controlType>
+               <aixm:upperLowerSeparation xsi:nil="true"/>
+               <aixm:protectedRoute xsi:nil="true"/>
+               <aixm:geometryComponent>
+                  <aixm:AirspaceGeometryComponent>
+                     <aixm:operation xsi:nil="true"/>
+                     <aixm:operationSequence xsi:nil="true"/>
+                     <aixm:theAirspaceVolume>
+                        <aixm:AirspaceVolume>
+                           <aixm:upperLimit uom="FL">305.0</aixm:upperLimit>
+                           <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+                           <aixm:maximumLimit xsi:nil="true"/>
+                           <aixm:maximumLimitReference xsi:nil="true"/>
+                           <aixm:lowerLimit uom="FL">245.0</aixm:lowerLimit>
+                           <aixm:lowerLimitReference>STD</aixm:lowerLimitReference>
+                           <aixm:minimumLimit xsi:nil="true"/>
+                           <aixm:minimumLimitReference xsi:nil="true"/>
+                           <aixm:width xsi:nil="true"/>
+                           <aixm:horizontalProjection>
+                              <aixm:Surface srsName="urn:ogc:def:crs:EPSG:4326">
+                                 <gml:patches>
+                                    <gml:PolygonPatch interpolation="planar">
+                                       <gml:exterior>
+                                          <gml:Ring>
+                                             <gml:curveMember xlink:type="simple">
+                                                <gml:Curve>
+                                                   <gml:segments>
+                                                      <gml:GeodesicString interpolation="geodesic">
+                                                         <gml:posList>48.13611111111111 21.752777777777776 47.87861111111111 22.25888888888889 47.319722222222225 21.67138888888889 47.96555555555556 21.119444444444444 48.13611111111111 21.752777777777776</gml:posList>
+                                                      </gml:GeodesicString>
+                                                   </gml:segments>
+                                                </gml:Curve>
+                                             </gml:curveMember>
+                                          </gml:Ring>
+                                       </gml:exterior>
+                                    </gml:PolygonPatch>
+                                 </gml:patches>
+                                 <aixm:horizontalAccuracy xsi:nil="true"/>
+                              </aixm:Surface>
+                           </aixm:horizontalProjection>
+                           <aixm:centreline xsi:nil="true"/>
+                           <aixm:contributorAirspace xsi:nil="true"/>
+                        </aixm:AirspaceVolume>
+                     </aixm:theAirspaceVolume>
+                  </aixm:AirspaceGeometryComponent>
+               </aixm:geometryComponent>
+               <aixm:annotation>
+                  <aixm:Note>
+                     <aixm:propertyName xsi:nil="true"/>
+                     <aixm:purpose>REMARK</aixm:purpose>
+                     <aixm:translatedNote>
+                        <aixm:LinguisticNote>
+                           <aixm:note lang="eng"/>
+                        </aixm:LinguisticNote>
+                     </aixm:translatedNote>
+                  </aixm:Note>
+               </aixm:annotation>
+            </aixm:AirspaceTimeSlice>
+         </aixm:timeSlice>
+      </aixm:Airspace>
+   </message:hasMember>
+   <message:hasMember xlink:type="simple">
+      <aixm:Airspace gml:id="uuid.b4dd673c-9299-4326-83a5-a1e3bc998279">
+         <gml:identifier codeSpace="urn:uuid:">b4dd673c-9299-4326-83a5-a1e3bc998279</gml:identifier>
+         <gml:boundedBy xsi:nil="true"/>
+         <aixm:timeSlice>
+            <aixm:AirspaceTimeSlice gml:id="uuid.c72e1cdc-4430-42d9-aeb8-7eefaf33ecba">
+               <gml:validTime xlink:type="simple">
+                  <gml:TimePeriod>
+                     <gml:beginPosition>2012-04-08T00:00:00Z</gml:beginPosition>
+                     <gml:endPosition indeterminatePosition="unknown"/>
+                  </gml:TimePeriod>
+               </gml:validTime>
+               <aixm:interpretation>BASELINE</aixm:interpretation>
+               <aixm:sequenceNumber>1</aixm:sequenceNumber>
+               <aixm:correctionNumber>0</aixm:correctionNumber>
+               <aixm:type>TRA</aixm:type>
+               <aixm:designator>LHTRA33A</aixm:designator>
+               <aixm:localType xsi:nil="true"/>
+               <aixm:name>TOP EAST ALPHA</aixm:name>
+               <aixm:designatorICAO>yes</aixm:designatorICAO>
+               <aixm:controlType>CIVIL</aixm:controlType>
+               <aixm:upperLowerSeparation xsi:nil="true"/>
+               <aixm:protectedRoute xsi:nil="true"/>
+               <aixm:geometryComponent>
+                  <aixm:AirspaceGeometryComponent>
+                     <aixm:operation xsi:nil="true"/>
+                     <aixm:operationSequence xsi:nil="true"/>
+                     <aixm:theAirspaceVolume>
+                        <aixm:AirspaceVolume>
+                           <aixm:upperLimit uom="FL">420.0</aixm:upperLimit>
+                           <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+                           <aixm:maximumLimit xsi:nil="true"/>
+                           <aixm:maximumLimitReference xsi:nil="true"/>
+                           <aixm:lowerLimit uom="FL">365.0</aixm:lowerLimit>
+                           <aixm:lowerLimitReference>STD</aixm:lowerLimitReference>
+                           <aixm:minimumLimit xsi:nil="true"/>
+                           <aixm:minimumLimitReference xsi:nil="true"/>
+                           <aixm:width xsi:nil="true"/>
+                           <aixm:horizontalProjection>
+                              <aixm:Surface srsName="urn:ogc:def:crs:EPSG:4326">
+                                 <gml:patches>
+                                    <gml:PolygonPatch interpolation="planar">
+                                       <gml:exterior>
+                                          <gml:Ring>
+                                             <gml:curveMember xlink:type="simple">
+                                                <gml:Curve>
+                                                   <gml:segments>
+                                                      <gml:GeodesicString interpolation="geodesic">
+                                                         <gml:posList>47.96555555555556 21.119444444444444 47.319722222222225 21.67138888888889 47.20277777777778 21.55027777777778 46.84722222222222 21.305833333333332 47.263333333333335 20.514166666666668 47.49527777777778 20.268055555555556 47.69027777777777 20.13222222222222 47.96555555555556 21.119444444444444</gml:posList>
+                                                      </gml:GeodesicString>
+                                                   </gml:segments>
+                                                </gml:Curve>
+                                             </gml:curveMember>
+                                          </gml:Ring>
+                                       </gml:exterior>
+                                    </gml:PolygonPatch>
+                                 </gml:patches>
+                                 <aixm:horizontalAccuracy xsi:nil="true"/>
+                              </aixm:Surface>
+                           </aixm:horizontalProjection>
+                           <aixm:centreline xsi:nil="true"/>
+                           <aixm:contributorAirspace xsi:nil="true"/>
+                        </aixm:AirspaceVolume>
+                     </aixm:theAirspaceVolume>
+                  </aixm:AirspaceGeometryComponent>
+               </aixm:geometryComponent>
+               <aixm:annotation>
+                  <aixm:Note>
+                     <aixm:propertyName xsi:nil="true"/>
+                     <aixm:purpose>REMARK</aixm:purpose>
+                     <aixm:translatedNote>
+                        <aixm:LinguisticNote>
+                           <aixm:note lang="eng"/>
+                        </aixm:LinguisticNote>
+                     </aixm:translatedNote>
+                  </aixm:Note>
+               </aixm:annotation>
+            </aixm:AirspaceTimeSlice>
+         </aixm:timeSlice>
+      </aixm:Airspace>
+   </message:hasMember>
+   <message:hasMember xlink:type="simple">
+      <aixm:Airspace gml:id="uuid.7aedd3d7-acff-4526-9ae1-e29df864d29f">
+         <gml:identifier codeSpace="urn:uuid:">7aedd3d7-acff-4526-9ae1-e29df864d29f</gml:identifier>
+         <gml:boundedBy xsi:nil="true"/>
+         <aixm:timeSlice>
+            <aixm:AirspaceTimeSlice gml:id="uuid.12d1f6b4-b2d7-4239-a2c3-a4e81e42bdcf">
+               <gml:validTime xlink:type="simple">
+                  <gml:TimePeriod>
+                     <gml:beginPosition>2012-04-08T00:00:00Z</gml:beginPosition>
+                     <gml:endPosition indeterminatePosition="unknown"/>
+                  </gml:TimePeriod>
+               </gml:validTime>
+               <aixm:interpretation>BASELINE</aixm:interpretation>
+               <aixm:sequenceNumber>1</aixm:sequenceNumber>
+               <aixm:correctionNumber>0</aixm:correctionNumber>
+               <aixm:type>TRA</aixm:type>
+               <aixm:designator>LHTRA33B</aixm:designator>
+               <aixm:localType xsi:nil="true"/>
+               <aixm:name>TOP EAST BRAVO</aixm:name>
+               <aixm:designatorICAO>yes</aixm:designatorICAO>
+               <aixm:controlType>CIVIL</aixm:controlType>
+               <aixm:upperLowerSeparation xsi:nil="true"/>
+               <aixm:protectedRoute xsi:nil="true"/>
+               <aixm:geometryComponent>
+                  <aixm:AirspaceGeometryComponent>
+                     <aixm:operation xsi:nil="true"/>
+                     <aixm:operationSequence xsi:nil="true"/>
+                     <aixm:theAirspaceVolume>
+                        <aixm:AirspaceVolume>
+                           <aixm:upperLimit uom="FL">420.0</aixm:upperLimit>
+                           <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+                           <aixm:maximumLimit xsi:nil="true"/>
+                           <aixm:maximumLimitReference xsi:nil="true"/>
+                           <aixm:lowerLimit uom="FL">365.0</aixm:lowerLimit>
+                           <aixm:lowerLimitReference>STD</aixm:lowerLimitReference>
+                           <aixm:minimumLimit xsi:nil="true"/>
+                           <aixm:minimumLimitReference xsi:nil="true"/>
+                           <aixm:width xsi:nil="true"/>
+                           <aixm:horizontalProjection>
+                              <aixm:Surface srsName="urn:ogc:def:crs:EPSG:4326">
+                                 <gml:patches>
+                                    <gml:PolygonPatch interpolation="planar">
+                                       <gml:exterior>
+                                          <gml:Ring>
+                                             <gml:curveMember xlink:type="simple">
+                                                <gml:Curve>
+                                                   <gml:segments>
+                                                      <gml:GeodesicString interpolation="geodesic">
+                                                         <gml:posList>48.13611111111111 21.752777777777776 47.87861111111111 22.25888888888889 47.319722222222225 21.67138888888889 47.96555555555556 21.119444444444444 48.13611111111111 21.752777777777776</gml:posList>
+                                                      </gml:GeodesicString>
+                                                   </gml:segments>
+                                                </gml:Curve>
+                                             </gml:curveMember>
+                                          </gml:Ring>
+                                       </gml:exterior>
+                                    </gml:PolygonPatch>
+                                 </gml:patches>
+                                 <aixm:horizontalAccuracy xsi:nil="true"/>
+                              </aixm:Surface>
+                           </aixm:horizontalProjection>
+                           <aixm:centreline xsi:nil="true"/>
+                           <aixm:contributorAirspace xsi:nil="true"/>
+                        </aixm:AirspaceVolume>
+                     </aixm:theAirspaceVolume>
+                  </aixm:AirspaceGeometryComponent>
+               </aixm:geometryComponent>
+               <aixm:annotation>
+                  <aixm:Note>
+                     <aixm:propertyName xsi:nil="true"/>
+                     <aixm:purpose>REMARK</aixm:purpose>
+                     <aixm:translatedNote>
+                        <aixm:LinguisticNote>
+                           <aixm:note lang="eng"/>
+                        </aixm:LinguisticNote>
+                     </aixm:translatedNote>
+                  </aixm:Note>
+               </aixm:annotation>
+            </aixm:AirspaceTimeSlice>
+         </aixm:timeSlice>
+      </aixm:Airspace>
+   </message:hasMember>
+</message:AIXMBasicMessage>
