@@ -4,6 +4,8 @@ require({
     // debug config for always refresh
     urlArgs: "v=" +  (new Date()).getTime(),
 
+    waitSeconds : 0,
+
     packages : [{
         name : 'Assets',
         location : 'Cesium/Assets'
@@ -52,25 +54,25 @@ require({
 
     var addAirspace = function(airspace, primitives) {
         var box = new Box(airspace);
-        console.log(box);
 
+        var material = Cesium.Material.fromType(undefined, Cesium.Material.ColorType);
+        material.uniforms.color = airspace.color;
         var appearance = new Cesium.Appearance({
             renderState : {
                 cull : {
-                    enabled : true,
-                    face : Cesium.CullFace.BACK
+                    enabled : false
                 },
                 depthTest : {
                     enabled : true
                 },
                 depthMask : false,
                 blending : Cesium.BlendingState.ALPHA_BLEND
-            }
+            },
+            material : material
         });
+
         var primitive = new Cesium.Primitive([box], appearance);
-        console.log(primitive);
         primitives.add(primitive);
-        console.log(primitives);
 
         /*
         var c = new Cesium.Cartographic();
@@ -150,13 +152,13 @@ require({
     layers.addImageryProvider(oamProvider);
     */
 
-    //widget.centralBody.depthTestAgainstTerrain = true;
+    widget.centralBody.depthTestAgainstTerrain = true;
 
 
     var terrainProvider = new Cesium.CesiumTerrainProvider({
        url : 'http://cesium.agi.com/smallterrain'
     });
-    //widget.centralBody.terrainProvider = terrainProvider;
+    widget.centralBody.terrainProvider = terrainProvider;
 
 
         var mesh3 = new Cesium.BoxGeometry({
@@ -167,9 +169,7 @@ require({
             pickData : 'mesh3'
         });
 
-        console.log(mesh3);
         var primitive = new Cesium.Primitive([mesh3], Cesium.Appearance.CLOSED_TRANSLUCENT);
-        console.log(primitive);
         primitives.add(primitive);
 
 
@@ -302,6 +302,7 @@ require({
             }
 
             var airspace = {
+                designator: designator,
                 color: color,
                 lower: lowerInM,
                 upper: upperInM,
