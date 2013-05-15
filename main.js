@@ -340,7 +340,6 @@ require({
         });
 
         var primitive = new Cesium.Primitive([wall], appearance);
-        console.log(primitive);
         primitives.add(primitive);
     }
 
