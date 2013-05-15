@@ -38,22 +38,19 @@ require({
         location : 'Cesium'
 
     }, {
-        name : 'AirspaceTessellator',
-        location : 'OpenAviationMap/AirspaceTessellator'
-    }, {
         name : 'Box',
         location : 'OpenAviationMap/Box'
     }] 
 }, [    
     'Cesium/Cesium',
-    'OpenAviationMap/Box'
-], function(Cesium, Box) {
+    'OpenAviationMap/AirspaceGeometry'
+], function(Cesium, AirspaceGeometry) {
 
     var widget = new Cesium.CesiumWidget('cesiumContainer');
     var scene = widget.scene;
 
     var addAirspace = function(airspace, primitives) {
-        var box = new Box(airspace);
+        var ag = new AirspaceGeometry(airspace);
 
         var material = Cesium.Material.fromType(undefined, Cesium.Material.ColorType);
         material.uniforms.color = airspace.color;
@@ -71,7 +68,7 @@ require({
             material : material
         });
 
-        var primitive = new Cesium.Primitive([box], appearance);
+        var primitive = new Cesium.Primitive([ag], appearance);
         primitives.add(primitive);
 
         /*
