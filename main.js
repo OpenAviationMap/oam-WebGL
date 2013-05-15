@@ -205,7 +205,7 @@ require({
         return ns[prefix] || null;
     }
 
-    function reqListener () {
+    function reqListener() {
         var doc = this.responseXML;
         var it = doc.evaluate('//aixm:AirspaceTimeSlice', doc, nsResolver,
                                 XPathResult.UNORDERED_NODE_ITERATOR_TYPE, null);
@@ -292,7 +292,7 @@ require({
                 default: color = new Cesium.Color(1, 1, 1, 0.4); break;
             }
 
-            var posListSplit = posListString.split(" ");
+            var posListSplit = posListString.split(' ');
             var posList = [];
             for (var i = 0; i < posListSplit.length; ++i) {
                 posList[i] = parseFloat(posListSplit[i]);
@@ -310,10 +310,10 @@ require({
         }
     };
 
-    var aixmFiles = [ "var/hungary-5.1.aixm51",
-                      "var/hungary-5.2.aixm51",
-                      "var/hungary-5.5.aixm51",
-                      "var/hungary-5.6.aixm51" ];
+    var aixmFiles = [ 'var/hungary-5.1.aixm51',
+                      'var/hungary-5.2.aixm51',
+                      'var/hungary-5.5.aixm51',
+                      'var/hungary-5.6.aixm51' ];
 
     for (var i = 0; i < aixmFiles.length; ++i) {
         var oReq = new XMLHttpRequest();
@@ -321,4 +321,54 @@ require({
         oReq.open("get", aixmFiles[i], true);
         oReq.send();
     }
+
+    function addWall(wall) {
+        var material = Cesium.Material.fromType(undefined, Cesium.Material.ColorType);
+        material.uniforms.color = new Cesium.Color(1.0, 1.0, 0, 0.3);
+        var appearance = new Cesium.Appearance({
+            renderState : {
+                cull : {
+                    enabled : false
+                },
+                depthTest : {
+                    enabled : true
+                },
+                depthMask : false,
+                blending : Cesium.BlendingState.ALPHA_BLEND
+            },
+            material : material
+        });
+
+        var primitive = new Cesium.Primitive([wall], appearance);
+        console.log(primitive);
+        primitives.add(primitive);
+    }
+
+    // default KML namespace resolver, see
+    // https://developer.mozilla.org/en-US/docs/Introduction_to_using_XPath_in_JavaScript#Implementing_a_User_Defined_Namespace_Resolver
+    function kmlNsResolver(prefix) {
+        return 'http://www.opengis.net/kml/2.2';
+    }
+
+    function kmlReqListener() {
+        var doc = this.responseXML;
+        var it = doc.evaluate('//kml:LineString', doc, kmlNsResolver,
+                                XPathResult.UNORDERED_NODE_ITERATOR_TYPE, null);
+
+        for (var node = it.iterateNext(); node; node = it.iterateNext()) {
+            var wall = Cesium.WallGeometry.fromKML(node);
+            wall.pickData = 'foo';
+            addWall(wall);
+        }
+    };
+
+    var kmlFiles = [ 'var/akosmaroy-2013-03-05-LHTL-LHSK-3d.kml' ];
+
+    for (var i = 0; i < kmlFiles.length; ++i) {
+        var oReq = new XMLHttpRequest();
+        oReq.onload = kmlReqListener;
+        oReq.open("get", kmlFiles[i], true);
+        oReq.send();
+    }
+
 });
