@@ -1,5 +1,9 @@
 require({
     baseUrl : 'lib',
+
+    // debug config for always refresh
+    urlArgs: "v=" +  (new Date()).getTime(),
+
     packages : [{
         name : 'Assets',
         location : 'Cesium/Assets'
@@ -48,8 +52,27 @@ require({
 
     var addAirspace = function(airspace, primitives) {
         var box = new Box(airspace);
-        primitives.add(box);
+        console.log(box);
 
+        var appearance = new Cesium.Appearance({
+            renderState : {
+                cull : {
+                    enabled : true,
+                    face : Cesium.CullFace.BACK
+                },
+                depthTest : {
+                    enabled : true
+                },
+                depthMask : false,
+                blending : Cesium.BlendingState.ALPHA_BLEND
+            }
+        });
+        var primitive = new Cesium.Primitive([box], appearance);
+        console.log(primitive);
+        primitives.add(primitive);
+        console.log(primitives);
+
+        /*
         var c = new Cesium.Cartographic();
 
         var upperPoints = [];
@@ -93,9 +116,12 @@ require({
                 enabled : true,
                 func : Cesium.DepthFunction.LESS
             },
+            depthMask : false,
             blending : Cesium.BlendingState.ALPHA_BLEND
         });
         primitives.add(lowerPoly);
+
+        */
     };
 
 
@@ -124,23 +150,29 @@ require({
     layers.addImageryProvider(oamProvider);
     */
 
-    widget.centralBody.depthTestAgainstTerrain = true;
+    //widget.centralBody.depthTestAgainstTerrain = true;
 
 
     var terrainProvider = new Cesium.CesiumTerrainProvider({
        url : 'http://cesium.agi.com/smallterrain'
     });
-    widget.centralBody.terrainProvider = terrainProvider;
+    //widget.centralBody.terrainProvider = terrainProvider;
 
 
-    var addPoint = function(lon, lat, elev) {
-        var e = new Cesium.EllipsoidPrimitive();
-        e.center = ellipsoid.cartographicToCartesian(
-            Cesium.Cartographic.fromDegrees(lon, lat, elev));
-        e.radii = new Cesium.Cartesian3(100, 100, 100);
-        e.material = Cesium.Material.fromType(undefined, Cesium.Material.RimLightingType);
-        primitives.add(e);
-    }
+        var mesh3 = new Cesium.BoxGeometry({
+            vertexFormat : Cesium.VertexFormat.POSITION_ONLY,
+            dimensions : new Cesium.Cartesian3(1000000.0, 1000000.0, 2000000.0),
+            modelMatrix : Cesium.Matrix4.multiplyByTranslation(Cesium.Transforms.eastNorthUpToFixedFrame(
+                Cesium.Ellipsoid.WGS84.cartographicToCartesian(Cesium.Cartographic.fromDegrees(-75.59777, 40.03883))), new Cesium.Cartesian3(0.0, 0.0, 3000000.0)),
+            pickData : 'mesh3'
+        });
+
+        console.log(mesh3);
+        var primitive = new Cesium.Primitive([mesh3], Cesium.Appearance.CLOSED_TRANSLUCENT);
+        console.log(primitive);
+        primitives.add(primitive);
+
+
 
     var west = 18.93888888888889;
     var east = 18.965555555555554;
