@@ -170,24 +170,13 @@ require({
         primitives.add(primitive);
 
 
-
-    var west = 18.93888888888889;
-    var east = 18.965555555555554;
-    var north = 47.531666666666666;
-    var south = 47.5225;
-
-    var upper = 1066;
-
-    // look at our polygon
-    var extent = new Cesium.Extent(Cesium.Math.toRadians(west),
-                                   Cesium.Math.toRadians(south),
-                                   Cesium.Math.toRadians(east),
-                                   Cesium.Math.toRadians(north));
     var cc = scene.getCamera().controller;
-    cc.viewExtent(extent, ellipsoid);
-    cc.moveBackward(1000);
-    cc.moveDown(4000);
-    cc.lookUp(Math.PI / 2.5);
+    var west = Cesium.Math.toRadians(17.5);
+    var south = Cesium.Math.toRadians(46.5);
+    var east = Cesium.Math.toRadians(18.9928799);
+    var north = Cesium.Math.toRadians(47.3374825);
+    var extent = new Cesium.Extent(west, south, east, north);
+    cc.viewExtent(extent, Cesium.Ellipsoid.WGS84);
 
 
     function nsResolver(prefix) {
