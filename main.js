@@ -49,6 +49,7 @@ require({
     var widget = new Cesium.CesiumWidget('cesiumContainer');
     var scene = widget.scene;
 
+
     var addAirspace = function(airspace, primitives) {
         var ag = new AirspaceGeometry(airspace);
 
@@ -68,7 +69,10 @@ require({
             material : material
         });
 
-        var primitive = new Cesium.Primitive([ag], appearance);
+        var primitive = new Cesium.Primitive({
+            geometries: [ag],
+            appearance: appearance
+        });
         primitives.add(primitive);
 
         /*
@@ -123,7 +127,6 @@ require({
         */
     };
 
-
     var bg = new Cesium.SingleTileImageryProvider({
         url: 'var/white.png'
     });
@@ -150,7 +153,6 @@ require({
     */
 
     widget.centralBody.depthTestAgainstTerrain = true;
-
 
     var terrainProvider = new Cesium.CesiumTerrainProvider({
        url : 'http://cesium.agi.com/smallterrain'
@@ -328,7 +330,10 @@ require({
             material : material
         });
 
-        var primitive = new Cesium.Primitive([wall], appearance);
+        var primitive = new Cesium.Primitive({
+            geometries: [wall],
+            appearance: appearance
+        });
         primitives.add(primitive);
     }
 
