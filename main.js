@@ -337,25 +337,16 @@ require({
         primitives.add(primitive);
     }
 
-    // default KML namespace resolver, see
-    // https://developer.mozilla.org/en-US/docs/Introduction_to_using_XPath_in_JavaScript#Implementing_a_User_Defined_Namespace_Resolver
-    function kmlNsResolver(prefix) {
-        return 'http://www.opengis.net/kml/2.2';
-    }
-
     function kmlReqListener() {
-        var doc = this.responseXML;
-        var it = doc.evaluate('//kml:LineString', doc, kmlNsResolver,
-                                XPathResult.UNORDERED_NODE_ITERATOR_TYPE, null);
-
-        for (var node = it.iterateNext(); node; node = it.iterateNext()) {
-            var wall = Cesium.WallGeometry.fromKML(node);
-            wall.pickData = 'foo';
+        Cesium.WallGeometry.fromKML(this.responseXML, terrainProvider, function(wall) {
             addWall(wall);
-        }
+        });
     };
 
-    var kmlFiles = [ 'var/akosmaroy-2013-03-05-LHTL-LHSK-3d.kml' ];
+    var kmlFiles = [
+        'var/akosmaroy-2013-03-05-LHTL-LHSK-3d.kml',
+        'var/akosmaroy-2013-03-05-LHTL-LHSK-3d-relground.kml'
+    ];
 
     for (var i = 0; i < kmlFiles.length; ++i) {
         var oReq = new XMLHttpRequest();
