@@ -44,36 +44,16 @@ require({
 }, [    
     'Cesium/Cesium',
     'OpenAviationMap/AirspaceGeometry'
-], function(Cesium, AirspaceGeometry) {
+], function(Cesium, Airspace) {
 
     var widget = new Cesium.CesiumWidget('cesiumContainer');
     var scene = widget.scene;
 
 
     var addAirspace = function(airspace, primitives) {
-        var ag = new AirspaceGeometry(airspace);
+        var as = new Airspace(airspace);
 
-        var material = Cesium.Material.fromType(undefined, Cesium.Material.ColorType);
-        material.uniforms.color = airspace.color;
-        var appearance = new Cesium.Appearance({
-            renderState : {
-                cull : {
-                    enabled : false
-                },
-                depthTest : {
-                    enabled : true
-                },
-                depthMask : false,
-                blending : Cesium.BlendingState.ALPHA_BLEND
-            },
-            material : material
-        });
-
-        var primitive = new Cesium.Primitive({
-            geometries: [ag],
-            appearance: appearance
-        });
-        primitives.add(primitive);
+        primitives.add(as.primitive);
 
         /*
         var c = new Cesium.Cartographic();
@@ -285,16 +265,23 @@ require({
 
             var posListSplit = posListString.split(' ');
             var posList = [];
-            for (var i = 0; i < posListSplit.length; ++i) {
-                posList[i] = parseFloat(posListSplit[i]);
+            for (var i = 0; i < posListSplit.length; i += 2) {
+                var c = new Cesium.Cartographic(
+                                Cesium.Math.toRadians(parseFloat(posListSplit[i + 1])),
+                                Cesium.Math.toRadians(parseFloat(posListSplit[i])),
+                                0);   // dummy height value
+                posList.push(c);
             }
 
             var airspace = {
-                designator: designator,
-                color: color,
-                lower: lowerInM,
-                upper: upperInM,
-                poslist: posList
+                designator : designator,
+                type       : type,
+                color      : color,
+                lower      : lowerInM,
+                lowerRef   : lowerLimitRef,
+                upper      : upperInM,
+                upperRef   : upperLimitRef,
+                poslist    : posList
             };
 
             addAirspace(airspace, primitives);
