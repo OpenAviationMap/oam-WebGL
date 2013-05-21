@@ -140,18 +140,6 @@ require({
     widget.centralBody.terrainProvider = terrainProvider;
 
 
-        var mesh3 = new Cesium.BoxGeometry({
-            vertexFormat : Cesium.VertexFormat.POSITION_ONLY,
-            dimensions : new Cesium.Cartesian3(1000000.0, 1000000.0, 2000000.0),
-            modelMatrix : Cesium.Matrix4.multiplyByTranslation(Cesium.Transforms.eastNorthUpToFixedFrame(
-                Cesium.Ellipsoid.WGS84.cartographicToCartesian(Cesium.Cartographic.fromDegrees(-75.59777, 40.03883))), new Cesium.Cartesian3(0.0, 0.0, 3000000.0)),
-            pickData : 'mesh3'
-        });
-
-        var primitive = new Cesium.Primitive([mesh3], Cesium.Appearance.CLOSED_TRANSLUCENT);
-        primitives.add(primitive);
-
-
     var cc = scene.getCamera().controller;
     var west = Cesium.Math.toRadians(17.5);
     var south = Cesium.Math.toRadians(46.5);
@@ -342,4 +330,46 @@ require({
         oReq.send();
     }
 
+
+
+
+    var material = Cesium.Material.fromType(undefined, Cesium.Material.ColorType);
+    material.uniforms.color = new Cesium.Color(0.0, 1.0, 0, 0.3);
+    var appearance = new Cesium.Appearance({
+        renderState : {
+            cull : {
+                enabled : false
+            },
+            depthTest : {
+                enabled : true
+            },
+            depthMask : false,
+            blending : Cesium.BlendingState.ALPHA_BLEND
+        },
+        material : material
+    });
+
+    var positions = ellipsoid.cartographicArrayToCartesianArray([
+        Cesium.Cartographic.fromDegrees(19, 47),
+        Cesium.Cartographic.fromDegrees(19, 57),
+        Cesium.Cartographic.fromDegrees(29, 57),
+        Cesium.Cartographic.fromDegrees(29, 47)
+    ]);
+
+    var polygon = new Cesium.PolygonGeometry({
+        positions : positions,
+        height    : 10000,
+        pickData  : 'foo'
+    });
+
+    var primitive = new Cesium.Primitive({
+        geometries: [ polygon ],
+        appearance: appearance
+    });
+
+    console.log(primitive);
+
+    //primitives.add(primitive);
+
 });
+
