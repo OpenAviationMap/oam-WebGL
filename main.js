@@ -38,20 +38,20 @@ require({
         location : 'Cesium'
 
     }, {
-        name : 'Box',
-        location : 'OpenAviationMap/Box'
+        name : 'AirspaceGeometry',
+        location : 'OpenAviationMap/AirspaceGeometry'
     }] 
 }, [    
     'Cesium/Cesium',
     'OpenAviationMap/AirspaceGeometry'
-], function(Cesium, Airspace) {
+], function(Cesium, AirspaceGeometry) {
 
     var widget = new Cesium.CesiumWidget('cesiumContainer');
     var scene = widget.scene;
 
 
     var addAirspace = function(airspace, primitives) {
-        var as = new Airspace(airspace);
+        var as = new AirspaceGeometry(airspace);
 
         primitives.add(as.primitive);
 
@@ -269,7 +269,7 @@ require({
                 lowerRef   : lowerLimitRef,
                 upper      : upperInM,
                 upperRef   : upperLimitRef,
-                poslist    : posList
+                positions  : posList
             };
 
             addAirspace(airspace, primitives);
@@ -366,8 +366,6 @@ require({
         geometries: [ polygon ],
         appearance: appearance
     });
-
-    console.log(primitive);
 
     //primitives.add(primitive);
 
