@@ -2,17 +2,17 @@
 <html lang="en">
   <head>
     <title>Open Aviation Map WebGL viewer</title>
-    <script data-main="main" src="lib/require.js"></script>
+    <script src="dojo-config.js"></script>
+    <script src="lib/ThirdParty/dojo-release-1.8.3-src/dojo/dojo.js"></script>
     <style>
-      @import url(lib/Cesium/Widgets/CesiumWidget/CesiumWidget.css);
-      body {
-        padding: 0;
-        margin: 0;
-        overflow: hidden;
-      }
+      @import url(lib/Cesium/Widgets/Dojo/CesiumViewerWidget.css);
+      @import url(var/oam.css);
     </style>
   </head>
 <body>
-  <div id="cesiumContainer" class="fullWindow"></div>
+    <div id="cesiumContainer" class="fullSize"></div>
+    <div id="loadingOverlay"><h1>Loading...</h1></div>
+    <div id="toolbar"></div>
+    <script src="main.js"></script>
 </body>
 </html>
