@@ -14,7 +14,7 @@ require([
                      'var/hungary-5.5.aixm51',
                      'var/hungary-5.6.aixm51' ];
 
-    var widget = new OpenAviationMap.OamViewer({ divName : 'cesiumContainer', aixmUrls : aixmUrls });
+    var widget = new OpenAviationMap.OamViewer({ container : 'cesiumContainer', aixmUrls : aixmUrls });
 
     // look at Hungary
     var cc = widget.cesiumWidget.scene.getCamera().controller;
