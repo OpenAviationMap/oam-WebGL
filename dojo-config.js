@@ -10,6 +10,9 @@ var dojoConfig = {
         name : 'dojo',
         location : 'ThirdParty/dojo-release-1.8.3-src/dojo'
     }, {
+        name : 'dojox',
+        location : 'ThirdParty/dojo-release-1.8.3-src/dojox'
+    }, {
         name : 'dijit',
         location : 'ThirdParty/dojo-release-1.8.3-src/dijit'
     }, {
