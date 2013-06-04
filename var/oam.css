@@ -88,7 +88,7 @@ body {
     bottom: 26px;
     left: 26px;
     text-decoration: none;
-    background-image: url(../lib/Cesium/Widgets/Images/Cesium_Logo_overlay.png);
+    background-image: url(../lib/Cesium/Source/Widgets/Images/Cesium_Logo_overlay.png);
     width: 118px;
     height: 26px;
 }

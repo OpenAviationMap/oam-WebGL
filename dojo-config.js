@@ -8,46 +8,46 @@ var dojoConfig = {
 
     packages : [{
         name : 'dojo',
-        location : 'ThirdParty/dojo-release-1.8.3-src/dojo'
+        location : 'Cesium/ThirdParty/dojo-release-1.8.3-src/dojo'
     }, {
         name : 'dojox',
-        location : 'ThirdParty/dojo-release-1.8.3-src/dojox'
+        location : 'Cesium/ThirdParty/dojo-release-1.8.3-src/dojox'
     }, {
         name : 'dijit',
-        location : 'ThirdParty/dojo-release-1.8.3-src/dijit'
+        location : 'Cesium/ThirdParty/dojo-release-1.8.3-src/dijit'
     }, {
         name : 'Assets',
-        location : 'Cesium/Assets'
+        location : 'Cesium/Source/Assets'
     }, {
         name : 'Core',
-        location : 'Cesium/Core'
+        location : 'Cesium/Source/Core'
     }, {
         name : 'DynamicScene',
-        location : 'Cesium/DynamicScene'
+        location : 'Cesium/Source/DynamicScene'
     }, {
         name : 'Renderer',
-        location : 'Cesium/Renderer'
+        location : 'Cesium/Source/Renderer'
     }, {
         name : 'Scene',
-        location : 'Cesium/Scene'
+        location : 'Cesium/Source/Scene'
     }, {
         name : 'Shaders',
-        location : 'Cesium/Shaders'
+        location : 'Cesium/Source/Shaders'
     }, {
         name : 'ThirdParty',
-        location : 'Cesium/ThirdParty'
+        location : 'Cesium/Source/ThirdParty'
     }, {
         name : 'Widgets',
-        location : 'Cesium/Widgets'
+        location : 'Cesium/Source/Widgets'
     }, {
         name : 'Dojo',
-        location : 'Cesium/Widgets/Dojo'
+        location : 'Cesium/Source/Widgets/Dojo'
     }, {
         name : 'Workers',
-        location : 'Cesium/Workers'
+        location : 'Cesium/Source/Workers'
     }, {
         name : 'Cesium',
-        location : 'Cesium'
+        location : 'Cesium/Source'
 
     }, {
         name : 'OpenAviationMap',

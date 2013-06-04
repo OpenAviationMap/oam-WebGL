@@ -1,0 +1,3 @@
+[submodule "lib/Cesium"]
+	path = lib/Cesium
+	url = https://github.com/OpenAviationMap/cesium.git
