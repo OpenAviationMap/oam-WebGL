@@ -1,4 +1,4 @@
-Open Aviation Map WebGL viewer
+### Open Aviation Map WebGL viewer ###
 
 to check out the project, do the following:
 
@@ -18,5 +18,5 @@ ln -s /path/to/oam-WebGL ~/public_html
 
 and then point your browser to:
 
-http://localhost/~<username>/oam-WebGL
+http://localhost/~username/oam-WebGL
 
