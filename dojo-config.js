@@ -8,13 +8,13 @@ var dojoConfig = {
 
     packages : [{
         name : 'dojo',
-        location : 'Cesium/ThirdParty/dojo-release-1.8.3-src/dojo'
+        location : 'dojo-release-1.9.1/dojo'
     }, {
         name : 'dojox',
-        location : 'Cesium/ThirdParty/dojo-release-1.8.3-src/dojox'
+        location : 'dojo-release-1.9.1/dojox'
     }, {
         name : 'dijit',
-        location : 'Cesium/ThirdParty/dojo-release-1.8.3-src/dijit'
+        location : 'dojo-release-1.9.1/dijit'
     }, {
         name : 'Assets',
         location : 'Cesium/Source/Assets'

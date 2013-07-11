@@ -1,12 +1,12 @@
 require([    
     'Cesium/Cesium',
-    'Widgets/Dojo/CesiumViewerWidget',
     'dojo/io-query',
     'OpenAviationMap',
+    'dojox/xml/parser'
 ], function(Cesium,
-            CesiumViewerWidget,
             ioQuery,
-            OpenAviationMap) {
+            OpenAviationMap,
+            xmlParser) {
 
     // set up an OAM viewer and load a few AIXM files
     var aixmUrls = [ 'var/hungary-5.1.aixm51',
@@ -15,6 +15,7 @@ require([
                      'var/hungary-5.6.aixm51' ];
 
     var widget = new OpenAviationMap.OamViewer({ container : 'cesiumContainer', aixmUrls : aixmUrls });
+
 
     // look at Hungary
     var cc = widget.cesiumWidget.scene.getCamera().controller;
