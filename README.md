@@ -5,7 +5,7 @@ to check out the project, do the following:
 ```
 git clone --recursive https://github.com/OpenAviationMap/oam-WebGL.git
 cd oam-WebGL/lib/Cesium
-git checkout batching
+git checkout master
 ant
 ```
 
