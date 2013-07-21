@@ -2,11 +2,13 @@ require([
     'Cesium/Cesium',
     'dojo/io-query',
     'OpenAviationMap',
-    'dojox/xml/parser'
+    'dojox/xml/parser',
+    'OpenAviationMap/KML'
 ], function(Cesium,
             ioQuery,
             OpenAviationMap,
-            xmlParser) {
+            xmlParser,
+            KML) {
 
     // set up an OAM viewer and load a few AIXM files
     var aixmUrls = [ 'var/hungary-5.1.aixm51',
@@ -14,7 +16,11 @@ require([
                      'var/hungary-5.5.aixm51',
                      'var/hungary-5.6.aixm51' ];
 
-    var widget = new OpenAviationMap.OamViewer({ container : 'cesiumContainer', aixmUrls : aixmUrls });
+    var widget = new OpenAviationMap.OamViewer({
+                        container : 'cesiumContainer',
+                        airspaceFilter : false,
+                        aixmUrls : aixmUrls
+    });
 
 
     // look at Hungary
@@ -25,5 +31,8 @@ require([
                                    Cesium.Math.toRadians(45.5));
     cc.viewExtent(extent, Cesium.Ellipsoid.WGS84);
 
+    var viewer = widget.cesiumWidget;
+
+    KML.fromUrls(['var/akosmaroy-2013-03-05-LHTL-LHSK-3d.kml'], viewer);
 });
 
