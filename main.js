@@ -18,7 +18,6 @@ require([
 
     var widget = new OpenAviationMap.OamViewer({
                         container : 'cesiumContainer',
-                        airspaceFilter : false,
                         aixmUrls : aixmUrls
     });
 
